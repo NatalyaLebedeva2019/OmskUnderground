@@ -1,0 +1,23 @@
+uuid: 85213f6b-58e9-43fb-a05f-bca6623d218e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layout
+    - node.type.page
+id: node.page.field_layout
+field_name: field_layout
+entity_type: node
+bundle: page
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:layout'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

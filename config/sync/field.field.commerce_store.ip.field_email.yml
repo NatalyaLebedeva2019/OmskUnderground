@@ -1,0 +1,19 @@
+uuid: f579e1cb-30a6-4630-b771-fd9f6b5b4f90
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.ip
+    - field.storage.commerce_store.field_email
+id: commerce_store.ip.field_email
+field_name: field_email
+entity_type: commerce_store
+bundle: ip
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,14 @@
+uuid: 36189f3b-530a-42f3-9728-0284eb1c490a
+langcode: ru
+status: true
+dependencies: {  }
+id: store
+label: Магазин
+weight: 3
+is_admin: null
+permissions:
+  - 'create default commerce_product'
+  - 'create status workflow_transition'
+  - 'delete own default commerce_product'
+  - 'update own default commerce_product'
+  - 'view own unpublished commerce_product'

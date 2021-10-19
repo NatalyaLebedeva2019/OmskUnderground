@@ -1,0 +1,22 @@
+uuid: 6876c70b-9682-40f6-88b2-449c1cd6f5f5
+langcode: ru
+status: true
+dependencies: {  }
+id: nds
+label: НДС
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 8af27ab0-2928-4f6f-9276-e6cbc678d115
+      label: НДС
+      percentage: '0.2'
+  territories:
+    -
+      country_code: RU
+      administrative_area: ''
+      locality: null
+      dependent_locality: null
+  display_inclusive: true

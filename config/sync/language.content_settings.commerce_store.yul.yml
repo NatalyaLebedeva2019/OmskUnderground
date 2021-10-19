@@ -1,0 +1,11 @@
+uuid: 779cf2d5-5d3b-45e9-a725-3f4f27aa9142
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.yul
+id: commerce_store.yul
+target_entity_type_id: commerce_store
+target_bundle: yul
+default_langcode: site_default
+language_alterable: false

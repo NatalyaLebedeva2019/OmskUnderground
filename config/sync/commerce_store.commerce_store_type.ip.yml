@@ -1,0 +1,9 @@
+uuid: 539ba09c-a66f-4bf5-9d67-d8fb7f8d134a
+langcode: ru
+status: true
+dependencies: {  }
+id: ip
+label: ИП
+description: ''
+traits: {  }
+locked: false

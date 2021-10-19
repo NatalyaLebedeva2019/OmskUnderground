@@ -1,0 +1,9 @@
+uuid: ff43f661-5331-4e69-a529-eac4da0bf1d7
+langcode: en
+status: true
+dependencies: {  }
+id: yul
+label: ЮЛ
+description: 'Юридическое лицо'
+traits: {  }
+locked: false

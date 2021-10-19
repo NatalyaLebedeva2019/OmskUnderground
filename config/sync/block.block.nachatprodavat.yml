@@ -1,0 +1,33 @@
+uuid: 314e2a01-b599-4b49-82a8-7e50a0610d74
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-store
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: nachatprodavat
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:add-store'
+settings:
+  id: 'system_menu_block:add-store'
+  label: 'Начать продавать'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

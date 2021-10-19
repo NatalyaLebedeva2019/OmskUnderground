@@ -1,0 +1,24 @@
+uuid: e8bef9eb-e4a7-465a-b4b5-69a596be0697
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - omsk_ungd
+_core:
+  default_config_hash: s0blj-MttMjnmKEuX66B0R-2HUXDx0dSLXhnrDIvQi8
+id: omsk_ungd_shopping_cart
+theme: omsk_ungd
+region: header
+weight: null
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+  item_text: items
+visibility: {  }

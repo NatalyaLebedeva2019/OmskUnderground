@@ -1,0 +1,33 @@
+uuid: df4c0f11-b14b-4e68-bd68-e325dff68058
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access wishlist'
+  - 'create default commerce_order'
+  - 'create ip commerce_store'
+  - 'create online commerce_store'
+  - 'create status workflow_transition'
+  - 'delete default commerce_order'
+  - 'delete own ip commerce_store'
+  - 'delete own online commerce_store'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update default commerce_order'
+  - 'update own ip commerce_store'
+  - 'update own online commerce_store'
+  - 'use text format basic_html'
+  - 'view default commerce_order'
+  - 'view media'
+  - 'view own commerce_order'

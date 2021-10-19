@@ -1,0 +1,14 @@
+uuid: fb3cce3a-ce70-4b28-9471-ece82ad34a43
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.store
+  module:
+    - user
+id: user_add_role_action.store
+label: 'Добавьте роль Магазин выбранным пользователям'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: store

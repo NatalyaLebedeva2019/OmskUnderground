@@ -1,0 +1,17 @@
+uuid: 13b9f4d8-16a9-4a8d-bbbd-f87b3a5e3cbc
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_wishlist
+  module:
+    - commerce_wishlist
+    - entity
+_core:
+  default_config_hash: 4Tub-22GaVjAMJ1HS0m-Y4dni2o9K4bhmhEg7fJU7E8
+id: commerce_wishlist_delete_action
+label: 'Delete wishlist'
+type: commerce_wishlist
+plugin: 'entity_delete_action:commerce_wishlist'
+configuration: {  }

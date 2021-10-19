@@ -1,0 +1,24 @@
+label: 'Wishlist items'
+description: 'Display a set of wishlist items in a table.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        purchasable_entity:
+          label: Title
+          separator: ', '
+        quantity:
+          label: Quantity
+          separator: ', '
+      arguments:
+        wishlist_id:
+          exception:
+            title: All

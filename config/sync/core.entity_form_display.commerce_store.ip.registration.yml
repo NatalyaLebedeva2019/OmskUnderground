@@ -1,0 +1,65 @@
+uuid: dce59407-9a8b-4306-84a6-63f45d9b7f7a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.ip
+    - core.entity_form_mode.commerce_store.registration
+    - field.field.commerce_store.ip.field_email
+    - field.field.commerce_store.ip.field_inn_ip
+    - field.field.commerce_store.ip.field_o
+  module:
+    - address
+id: commerce_store.ip.registration
+targetEntityType: commerce_store
+bundle: ip
+mode: registration
+content:
+  address:
+    type: address_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_inn_ip:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_o:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  mail:
+    type: email_default
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  billing_countries: true
+  default_currency: true
+  field_email: true
+  is_default: true
+  langcode: true
+  path: true
+  prices_include_tax: true
+  tax_registrations: true
+  timezone: true
+  uid: true

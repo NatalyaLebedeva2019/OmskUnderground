@@ -1,0 +1,14 @@
+uuid: ffb5c17a-0d72-4b74-a08b-ab54c0e75450
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.store
+  module:
+    - user
+id: user_remove_role_action.store
+label: 'Удалить роль Магазин из выбранных пользователей'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: store

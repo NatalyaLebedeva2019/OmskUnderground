@@ -1,0 +1,23 @@
+uuid: 6ab3f391-e21c-42fd-bf7d-ff3228fb32d6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.ip
+    - field.storage.commerce_store.field_inn_ip
+id: commerce_store.ip.field_inn_ip
+field_name: field_inn_ip
+entity_type: commerce_store
+bundle: ip
+label: 'ИНН ИП'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 12
+  max: 12
+  prefix: ''
+  suffix: ''
+field_type: integer

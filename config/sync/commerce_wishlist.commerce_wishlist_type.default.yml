@@ -1,0 +1,9 @@
+uuid: 2cba2753-d54d-4de5-b187-95d7ca7770d2
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cHDXesbGIruR8gM42K02dHrxi9Y9OTOxTdHVYuBlKtU
+label: Default
+id: default
+allowAnonymous: false

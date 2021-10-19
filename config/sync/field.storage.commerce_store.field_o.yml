@@ -1,0 +1,21 @@
+uuid: c9d0a883-f6df-4b46-b004-d9a8f4353be6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_store
+id: commerce_store.field_o
+field_name: field_o
+entity_type: commerce_store
+type: string
+settings:
+  max_length: 15
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

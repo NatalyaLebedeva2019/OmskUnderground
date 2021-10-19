@@ -1,0 +1,20 @@
+uuid: cdb7ef6c-6011-4ff1-8bcc-6f36b9e8f1b6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_store
+id: commerce_store.field_inn_ip
+field_name: field_inn_ip
+entity_type: commerce_store
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

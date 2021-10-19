@@ -1,0 +1,22 @@
+uuid: a4f81f6f-2cdc-4345-996e-d37a5775e5e0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - omsk_ungd
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: omsk_ungd_content
+theme: omsk_ungd
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,16 @@
+uuid: a116e58f-c9ce-4cae-9d4f-12d71bdb40e3
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_product
+      - commerce_wishlist
+  module:
+    - commerce_product
+_core:
+  default_config_hash: ir0ZAfTnxjCxwjHdreaE8qBRtAui00PP77puTcAUocw
+id: commerce_product_variation.wishlist
+label: 'Список желаний'
+targetEntityType: commerce_product_variation
+cache: true

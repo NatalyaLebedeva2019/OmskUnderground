@@ -1,0 +1,13 @@
+uuid: 4bed914e-2b97-4f55-a5d1-8a3ca5985d12
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.status_active
+    - workflow.state.status_creation
+id: status_creation_active
+label: null
+module: workflow
+from_sid: status_creation
+to_sid: status_active
+roles: {  }

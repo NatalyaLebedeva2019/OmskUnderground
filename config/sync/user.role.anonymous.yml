@@ -1,0 +1,19 @@
+uuid: dce93bc7-ce26-4dc5-8be6-72cf4facc570
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access wishlist'
+  - 'create status workflow_transition'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'

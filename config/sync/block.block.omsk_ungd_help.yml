@@ -1,0 +1,22 @@
+uuid: 9e80b446-23fb-4cec-92e5-8d0ef0b61ac5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - omsk_ungd
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: omsk_ungd_help
+theme: omsk_ungd
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  provider: help
+  label_display: '0'
+visibility: {  }

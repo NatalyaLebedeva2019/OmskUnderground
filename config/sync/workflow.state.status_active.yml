@@ -1,0 +1,12 @@
+uuid: 2ca6ec0f-7adc-47ca-8102-7c65123073ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.workflow.status
+id: status_active
+label: Active
+module: workflow
+wid: status
+weight: -8
+sysid: 0

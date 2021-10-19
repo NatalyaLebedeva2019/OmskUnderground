@@ -1,0 +1,8 @@
+uuid: 6cef61fa-eabd-4e41-87ec-f306f1ac883d
+langcode: ru
+status: true
+dependencies: {  }
+id: add-store
+label: 'Начать продавать'
+description: ''
+locked: false

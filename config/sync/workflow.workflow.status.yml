@@ -1,0 +1,16 @@
+uuid: 448b2bd0-68bc-47ee-bba3-c7d4f23399af
+langcode: en
+status: true
+dependencies: {  }
+id: status
+label: 'Store Status'
+module: workflow
+options:
+  name_as_title: 0
+  fieldset: 0
+  options: radios
+  schedule_enable: true
+  schedule_timezone: 1
+  always_update_entity: 0
+  comment_log_node: 1
+  watchdog_log: 1
