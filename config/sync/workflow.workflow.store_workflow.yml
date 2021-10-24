@@ -1,9 +1,9 @@
-uuid: 448b2bd0-68bc-47ee-bba3-c7d4f23399af
+uuid: 88f75b41-2c73-4ed7-bb1b-320ff26c0810
 langcode: en
 status: true
 dependencies: {  }
-id: status
-label: 'Store Status'
+id: store_workflow
+label: 'Store Workflow'
 module: workflow
 options:
   name_as_title: 0

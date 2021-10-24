@@ -1,35 +1,36 @@
-uuid: dce59407-9a8b-4306-84a6-63f45d9b7f7a
+uuid: ac810d95-a177-441c-bb68-a83235ef0837
 langcode: ru
 status: true
 dependencies:
   config:
-    - commerce_store.commerce_store_type.ip
-    - core.entity_form_mode.commerce_store.registration
-    - field.field.commerce_store.ip.field_email
-    - field.field.commerce_store.ip.field_inn_ip
-    - field.field.commerce_store.ip.field_o
+    - commerce_store.commerce_store_type.yul
+    - core.entity_form_mode.commerce_store.register
+    - field.field.commerce_store.yul.field_inn_yul
+    - field.field.commerce_store.yul.field_ogrn_yul
+    - field.field.commerce_store.yul.field_state
   module:
     - address
-id: commerce_store.ip.registration
+id: commerce_store.yul.register
 targetEntityType: commerce_store
-bundle: ip
-mode: registration
+bundle: yul
+mode: register
 content:
   address:
     type: address_default
-    weight: 4
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_inn_ip:
-    weight: 2
+  field_inn_yul:
+    weight: 4
     settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: number
+    type: string_textfield
     region: content
-  field_o:
-    weight: 1
+  field_ogrn_yul:
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -38,7 +39,7 @@ content:
     region: content
   mail:
     type: email_default
-    weight: 3
+    weight: 1
     region: content
     settings:
       size: 60
@@ -55,7 +56,7 @@ content:
 hidden:
   billing_countries: true
   default_currency: true
-  field_email: true
+  field_state: true
   is_default: true
   langcode: true
   path: true

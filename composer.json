@@ -21,6 +21,18 @@
         "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "jackocnr/intl-tel-input": {
+            "type": "package",
+            "package": {
+                "name": "jackocnr/intl-tel-input",
+                "version": "17.0.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/refs/heads/master.zip",
+                    "type": "zip"
+                }
+            }
         }
     },
     "config": {
@@ -37,21 +49,24 @@
         "drupal/core": "^9.1",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/ds": "^3.13",
+        "drupal/forms_steps": "^1.5",
         "drupal/layout_library": "^1.0@beta",
         "drupal/mail_login": "^2.4",
+        "drupal/phone_international": "^3.1",
         "drupal/search_api": "^1.19",
-        "drupal/social_auth": "^3.0",
         "drupal/swiftmailer": "^2.0",
         "drupal/token": "^1.9",
         "drupal/workflow": "^1.5",
         "drupalcommerce/commerce_base": "9.x-dev",
         "drush/drush": "^10.6",
+        "jackocnr/intl-tel-input": "^17.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
         "drupal/core-dev": "^9.1",
+        "drupal/devel": "^4.1",
         "zaporylie/composer-drupal-optimizations": "^1.2"
     },
     "conflict": {

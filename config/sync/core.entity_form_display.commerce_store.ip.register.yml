@@ -1,0 +1,88 @@
+uuid: b5c76ded-6cc9-4043-a1e8-3e76dc2e961c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.ip
+    - core.entity_form_mode.commerce_store.register
+    - field.field.commerce_store.ip.field_contact
+    - field.field.commerce_store.ip.field_contact_phone
+    - field.field.commerce_store.ip.field_inn_ip
+    - field.field.commerce_store.ip.field_ogrn_ip
+    - field.field.commerce_store.ip.field_state
+  module:
+    - address
+    - phone_international
+id: commerce_store.ip.register
+targetEntityType: commerce_store
+bundle: ip
+mode: register
+content:
+  address:
+    type: address_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_phone:
+    type: phone_international_widget
+    weight: 6
+    region: content
+    settings:
+      initial_country: RU
+      preferred_countries:
+        - PT
+      geolocation: false
+      exclude_countries: {  }
+    third_party_settings: {  }
+  field_inn_ip:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ogrn_ip:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  mail:
+    type: email_default
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  billing_countries: true
+  default_currency: true
+  field_state: true
+  is_default: true
+  langcode: true
+  path: true
+  prices_include_tax: true
+  tax_registrations: true
+  timezone: true
+  uid: true

@@ -1,0 +1,18 @@
+uuid: b443ff1d-d2b9-4a41-a87e-03aba41aaf5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.store_workflow_approved
+    - workflow.state.store_workflow_creation
+id: store_workflow_creation_approved
+label: Approve
+module: workflow
+from_sid: store_workflow_creation
+to_sid: store_workflow_approved
+roles:
+  administrator: administrator
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  store: '0'

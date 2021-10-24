@@ -1,0 +1,20 @@
+uuid: 9db24f67-b106-42c9-8dd0-92fa9f34afa2
+langcode: ru
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_tokens
+field_name: field_tokens
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 4bfce2c5-89f2-49d4-828c-d683fe664156
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.workflow.store_workflow
+id: store_workflow_approved
+label: Approved
+module: workflow
+wid: store_workflow
+weight: -8
+sysid: 0

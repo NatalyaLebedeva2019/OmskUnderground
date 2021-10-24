@@ -1,0 +1,12 @@
+uuid: f4f5effd-b533-497c-b5d1-1dbd7319107f
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.store_workflow_rejected
+id: store_workflow_rejected_rejected
+label: Reject
+module: workflow
+from_sid: store_workflow_rejected
+to_sid: store_workflow_rejected
+roles: {  }

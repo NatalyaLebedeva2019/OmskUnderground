@@ -1,10 +1,10 @@
-uuid: 4e324e17-717c-4106-b187-9e37254f45fd
+uuid: 0fc3439f-d346-488f-8f35-dcfda7c17ab3
 langcode: ru
 status: true
 dependencies:
   module:
     - commerce_store
-id: commerce_store.registration
-label: Регистрация
+id: commerce_store.register
+label: Register
 targetEntityType: commerce_store
 cache: true

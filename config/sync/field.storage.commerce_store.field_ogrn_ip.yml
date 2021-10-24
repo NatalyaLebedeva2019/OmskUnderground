@@ -1,15 +1,15 @@
-uuid: 11a24322-b874-4474-93af-7e89b04887a3
+uuid: 70d1857b-39d4-473d-8730-ac21895c272c
 langcode: ru
 status: true
 dependencies:
   module:
     - commerce_store
-id: commerce_store.field_inn_ip
-field_name: field_inn_ip
+id: commerce_store.field_ogrn_ip
+field_name: field_ogrn_ip
 entity_type: commerce_store
 type: string
 settings:
-  max_length: 12
+  max_length: 15
   is_ascii: false
   case_sensitive: false
 module: core

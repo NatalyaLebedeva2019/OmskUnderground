@@ -1,0 +1,18 @@
+uuid: f028f1ec-ab2e-4b9c-b783-f08ddc84c1ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.store_workflow_creation
+    - workflow.state.store_workflow_rejected
+id: store_workflow_creation_rejected
+label: Reject
+module: workflow
+from_sid: store_workflow_creation
+to_sid: store_workflow_rejected
+roles:
+  workflow_author: workflow_author
+  administrator: administrator
+  anonymous: '0'
+  authenticated: '0'
+  store: '0'

@@ -1,0 +1,12 @@
+uuid: 163a2127-630a-45f2-91ef-190fc96d388b
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.workflow.store_workflow
+id: store_workflow_rejected
+label: Rejected
+module: workflow
+wid: store_workflow
+weight: -8
+sysid: 0

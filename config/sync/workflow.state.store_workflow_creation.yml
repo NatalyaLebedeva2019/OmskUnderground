@@ -1,0 +1,12 @@
+uuid: bbd9359c-a2bd-4a6b-8225-deceb9e87677
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.workflow.store_workflow
+id: store_workflow_creation
+label: Creation
+module: workflow
+wid: store_workflow
+weight: -11
+sysid: 1

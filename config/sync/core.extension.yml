@@ -15,6 +15,7 @@ module:
   commerce_number_pattern: 0
   commerce_order: 0
   commerce_payment: 0
+  commerce_payment_example: 0
   commerce_price: 0
   commerce_product: 0
   commerce_promotion: 0
@@ -26,6 +27,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   ds_switch_view_mode: 0
   dynamic_page_cache: 0
   editor: 0
@@ -35,6 +37,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  forms_steps: 0
   help: 0
   history: 0
   image: 0
@@ -51,10 +54,12 @@ module:
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  mystore_forms: 0
   node: 0
   options: 0
   path: 0
   path_alias: 0
+  phone_international: 0
   profile: 0
   quickedit: 0
   rdf: 0
@@ -71,6 +76,7 @@ module:
   user: 0
   views_ui: 0
   workflow: 0
+  workflow_access: 0
   ds: 1
   ds_extras: 2
   views: 10

@@ -1,0 +1,12 @@
+uuid: a8373557-21b5-4006-8a6a-971b809af3f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.store_workflow_approved
+id: store_workflow_approved_approved
+label: Approve
+module: workflow
+from_sid: store_workflow_approved
+to_sid: store_workflow_approved
+roles: {  }

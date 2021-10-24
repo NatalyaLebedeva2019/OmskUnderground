@@ -1,0 +1,26 @@
+uuid: a9c59904-8eac-41ba-aab3-c3a0ceb4356b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_tokens_procent
+  module:
+    - user
+id: user.user.field_tokens_procent
+field_name: field_tokens_procent
+entity_type: user
+bundle: user
+label: 'Tokens Procent'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 5
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

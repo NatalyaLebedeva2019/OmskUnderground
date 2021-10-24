@@ -1,15 +1,15 @@
-uuid: c9d0a883-f6df-4b46-b004-d9a8f4353be6
+uuid: c4f8af16-74cd-4e0d-939d-2d5d959a221c
 langcode: ru
 status: true
 dependencies:
   module:
-    - commerce_store
-id: commerce_store.field_o
-field_name: field_o
-entity_type: commerce_store
+    - user
+id: user.field_name
+field_name: field_name
+entity_type: user
 type: string
 settings:
-  max_length: 15
+  max_length: 255
   is_ascii: false
   case_sensitive: false
 module: core

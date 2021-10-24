@@ -1,0 +1,12 @@
+uuid: ce11277d-1ac6-4449-9f4f-df749601ad94
+langcode: en
+status: false
+dependencies:
+  config:
+    - workflow.workflow.store_workflow
+id: store_workflow_on_check
+label: 'On check'
+module: workflow
+wid: store_workflow
+weight: -9
+sysid: 0

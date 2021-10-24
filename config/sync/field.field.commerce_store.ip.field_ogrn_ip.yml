@@ -1,12 +1,12 @@
-uuid: be30a612-9ccf-4b70-bb9d-fa05744d1637
+uuid: a12f4d40-2160-4a0d-ba12-12646552e99e
 langcode: ru
 status: true
 dependencies:
   config:
     - commerce_store.commerce_store_type.ip
-    - field.storage.commerce_store.field_o
-id: commerce_store.ip.field_o
-field_name: field_o
+    - field.storage.commerce_store.field_ogrn_ip
+id: commerce_store.ip.field_ogrn_ip
+field_name: field_ogrn_ip
 entity_type: commerce_store
 bundle: ip
 label: 'ОГРН ИП'

@@ -1,0 +1,19 @@
+uuid: edc9e254-77cc-45fe-b34d-fe93b134ce82
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.yul
+    - field.storage.commerce_store.field_inn_yul
+id: commerce_store.yul.field_inn_yul
+field_name: field_inn_yul
+entity_type: commerce_store
+bundle: yul
+label: 'ИНН ЮЛ'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,18 +1,16 @@
-uuid: 11a24322-b874-4474-93af-7e89b04887a3
+uuid: d3003206-debd-4504-bb3a-66157b6b487a
 langcode: ru
 status: true
 dependencies:
   module:
     - commerce_store
-id: commerce_store.field_inn_ip
-field_name: field_inn_ip
+    - phone_international
+id: commerce_store.field_contact_phone
+field_name: field_contact_phone
 entity_type: commerce_store
-type: string
-settings:
-  max_length: 12
-  is_ascii: false
-  case_sensitive: false
-module: core
+type: phone_international
+settings: {  }
+module: phone_international
 locked: false
 cardinality: 1
 translatable: true

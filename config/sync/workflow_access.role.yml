@@ -1,0 +1,21 @@
+store_workflow_approved:
+  anonymous:
+    grant_view: true
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: true
+    grant_update: 0
+    grant_delete: 0
+  workflow_author:
+    grant_view: 0
+    grant_update: true
+    grant_delete: true
+  administrator:
+    grant_view: 0
+    grant_update: true
+    grant_delete: true
+  store:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0

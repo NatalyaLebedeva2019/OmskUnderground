@@ -1,0 +1,28 @@
+uuid: b61a13b8-e838-4061-92b8-28acf73fa070
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_store
+    - workflow
+id: commerce_store.field_state
+field_name: field_state
+entity_type: commerce_store
+type: workflow
+settings:
+  workflow_type: store_workflow
+  allowed_values:
+    -
+      value: status_creation
+      label: 'On moderation'
+    -
+      value: status_active
+      label: Active
+  allowed_values_function: ''
+module: workflow
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

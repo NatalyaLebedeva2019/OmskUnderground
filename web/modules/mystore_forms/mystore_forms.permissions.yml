@@ -1,0 +1,4 @@
+administer mystore_forms configuration:
+  title: 'Administer mystore_forms configuration'
+  description: 'Optional description.'
+  restrict access: true

@@ -1,72 +1,50 @@
-uuid: c8e89d1f-3717-4198-87a4-0a27aad1547d
+uuid: af02d366-11bc-486d-a784-4ba26def5bb7
 langcode: ru
 status: true
 dependencies:
   config:
-    - commerce_store.commerce_store_type.ip
-    - field.field.commerce_store.ip.field_contact
-    - field.field.commerce_store.ip.field_contact_phone
-    - field.field.commerce_store.ip.field_inn_ip
-    - field.field.commerce_store.ip.field_ogrn_ip
-    - field.field.commerce_store.ip.field_state
+    - commerce_store.commerce_store_type.yul
+    - field.field.commerce_store.yul.field_inn_yul
+    - field.field.commerce_store.yul.field_ogrn_yul
+    - field.field.commerce_store.yul.field_state
   module:
     - address
     - inline_entity_form
     - path
-    - phone_international
     - workflow
-id: commerce_store.ip.default
+id: commerce_store.yul.default
 targetEntityType: commerce_store
-bundle: ip
+bundle: yul
 mode: default
 content:
   address:
     type: address_default
-    weight: 4
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   billing_countries:
     type: options_select
-    weight: 11
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   default_currency:
     type: options_select
-    weight: 6
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_contact:
-    weight: 15
+  field_inn_yul:
+    weight: 12
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_contact_phone:
-    weight: 16
-    settings:
-      initial_country: RU
-      preferred_countries:
-        - PT
-      geolocation: false
-      exclude_countries: {  }
-    third_party_settings: {  }
-    type: phone_international_widget
-    region: content
-  field_inn_ip:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_ogrn_ip:
-    weight: 2
+  field_ogrn_yul:
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -81,14 +59,14 @@ content:
     region: content
   is_default:
     type: boolean_checkbox
-    weight: 12
-    region: content
     settings:
       display_label: true
+    weight: 10
+    region: content
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 5
+    weight: 2
     region: content
     settings:
       include_locked: true
@@ -111,7 +89,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -119,18 +97,18 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 5
     region: content
     third_party_settings: {  }
   tax_registrations:
     type: options_select
-    weight: 10
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
     type: options_select
-    weight: 9
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }

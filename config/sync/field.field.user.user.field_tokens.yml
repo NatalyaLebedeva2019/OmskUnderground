@@ -1,0 +1,26 @@
+uuid: da31ed30-6988-47bb-8111-4dedcb3c1fab
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_tokens
+  module:
+    - user
+id: user.user.field_tokens
+field_name: field_tokens
+entity_type: user
+bundle: user
+label: Tokens
+description: 'Жетоны метро'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

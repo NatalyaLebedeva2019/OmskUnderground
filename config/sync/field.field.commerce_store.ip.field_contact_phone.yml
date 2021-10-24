@@ -1,0 +1,21 @@
+uuid: 45470a39-736d-4ad9-ab46-4af674fd3df3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.ip
+    - field.storage.commerce_store.field_contact_phone
+  module:
+    - phone_international
+id: commerce_store.ip.field_contact_phone
+field_name: field_contact_phone
+entity_type: commerce_store
+bundle: ip
+label: 'Contact Phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: phone_international

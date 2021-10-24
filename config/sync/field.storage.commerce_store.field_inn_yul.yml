@@ -1,17 +1,20 @@
-uuid: a53208bc-617c-4ca0-9235-d544ef90c8d1
+uuid: 323131d0-fa37-4a7d-ba1a-3b32b84623be
 langcode: ru
 status: true
 dependencies:
   module:
     - commerce_store
-id: commerce_store.field_email
-field_name: field_email
+id: commerce_store.field_inn_yul
+field_name: field_inn_yul
 entity_type: commerce_store
-type: email
-settings: {  }
+type: string
+settings:
+  max_length: 10
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
