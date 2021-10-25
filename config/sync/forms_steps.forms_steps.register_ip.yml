@@ -11,7 +11,7 @@ redirection_policy: ''
 redirection_target: ''
 steps:
   form:
-    label: Form
+    label: 'Register IP'
     weight: 0
     entity_type: commerce_store
     entity_bundle: ip

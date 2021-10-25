@@ -8,3 +8,56 @@
  * This file is no longer required in Drupal 8.
  * @see https://www.drupal.org/node/2217931
  */
+
+/**
+ * Implements hook_form_FORM_ID_alter.
+ */
+function mystore_forms_form_commerce_store_ip_register_form_alter
+(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $form_id
+)
+{
+  $form['#validate'][] = 'mystore_forms_register_store_validate';
+  // $current_user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+  
+  // if (isset($form['field_contact'])) {
+  //   $form['field_contact']['#default_value'] = [$current_user->field_name->value];
+  //   $form_state->setValue('field_contact', $current_user->field_name->value);
+  //   $form_state->setRebuild();
+  // }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter.
+ */
+function mystore_forms_form_commerce_store_yl_register_form_alter
+(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $form_id
+)
+{
+  $form['#validate'][] = 'mystore_forms_register_store_validate';
+}
+
+function mystore_forms_register_store_validate
+(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state
+)
+{
+  if (isset($form['field_ogrn_ip']) && strlen($form_state->getValue('field_ogrn_ip')[0]['value']) < 15) {
+    $form_state->setErrorByName('field_ogrn_ip', t('Invalid OGRN format.'));
+  }
+  if (isset($form['field_ogrn_yul']) && strlen($form_state->getValue('field_ogrn_yul')[0]['value']) < 13) {
+    $form_state->setErrorByName('field_ogrn_yul', t('Invalid OGRN format.'));
+  }
+  if (isset($form['field_inn_ip']) && strlen($form_state->getValue('field_inn_ip')[0]['value']) < 12) {
+    $form_state->setErrorByName('field_inn_ip', t('Invalid INN format.'));
+  }
+  if (isset($form['field_inn_yul']) && strlen($form_state->getValue('field_inn_yul')[0]['value']) < 10) {
+    $form_state->setErrorByName('field_inn_yul', t('Invalid INN format.'));
+  }
+}

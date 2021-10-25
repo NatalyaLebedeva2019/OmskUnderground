@@ -5,11 +5,14 @@ dependencies:
   config:
     - commerce_store.commerce_store_type.yul
     - core.entity_form_mode.commerce_store.register
+    - field.field.commerce_store.yul.field_contact
+    - field.field.commerce_store.yul.field_contact_phone
     - field.field.commerce_store.yul.field_inn_yul
     - field.field.commerce_store.yul.field_ogrn_yul
     - field.field.commerce_store.yul.field_state
   module:
     - address
+    - phone_international
 id: commerce_store.yul.register
 targetEntityType: commerce_store
 bundle: yul
@@ -20,6 +23,25 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_contact:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_phone:
+    type: phone_international_widget
+    weight: 6
+    region: content
+    settings:
+      initial_country: PT
+      geolocation: false
+      exclude_countries: {  }
+      preferred_countries:
+        - PT
     third_party_settings: {  }
   field_inn_yul:
     weight: 4

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - commerce_store.commerce_store_type.yul
+    - field.field.commerce_store.yul.field_contact
+    - field.field.commerce_store.yul.field_contact_phone
     - field.field.commerce_store.yul.field_inn_yul
     - field.field.commerce_store.yul.field_ogrn_yul
     - field.field.commerce_store.yul.field_state
@@ -11,6 +13,7 @@ dependencies:
     - address
     - inline_entity_form
     - path
+    - phone_international
     - workflow
 id: commerce_store.yul.default
 targetEntityType: commerce_store
@@ -35,6 +38,25 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_contact:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_phone:
+    weight: 16
+    settings:
+      initial_country: PT
+      geolocation: false
+      exclude_countries: {  }
+      preferred_countries:
+        - PT
+    third_party_settings: {  }
+    type: phone_international_widget
+    region: content
   field_inn_yul:
     weight: 12
     settings:

@@ -1,0 +1,18 @@
+uuid: 3ae50316-1deb-49d2-9630-848a5e5a4854
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.state.store_workflow_on_check
+    - workflow.state.store_workflow_rejected
+id: store_workflow_on_check_rejected
+label: Reject
+module: workflow
+from_sid: store_workflow_on_check
+to_sid: store_workflow_rejected
+roles:
+  administrator: administrator
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  store: '0'
