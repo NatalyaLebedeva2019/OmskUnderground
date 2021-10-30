@@ -1,79 +1,65 @@
-uuid: 48f5e2e8-39d1-419b-9884-696c0b6e6693
+uuid: 6c89f0cb-7461-443f-ac52-42ee7ed7d235
 langcode: ru
 status: true
 dependencies:
   config:
     - commerce_store.commerce_store_type.ip
+    - core.entity_view_mode.commerce_store.teaser
     - field.field.commerce_store.ip.field_contact
     - field.field.commerce_store.ip.field_contact_phone
     - field.field.commerce_store.ip.field_image
     - field.field.commerce_store.ip.field_inn_ip
     - field.field.commerce_store.ip.field_ogrn_ip
     - field.field.commerce_store.ip.field_state
+    - image.style.store_teaser_image
   module:
     - image
+    - layout_builder
     - options
-    - phone_international
-id: commerce_store.ip.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: commerce_store.ip.teaser
 targetEntityType: commerce_store
 bundle: ip
-mode: default
+mode: teaser
 content:
-  field_contact:
-    weight: 6
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_contact_phone:
-    weight: 7
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: phone_international_formatter
-    region: content
   field_image:
-    weight: 8
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: store_teaser_image
+      image_link: content
     third_party_settings: {  }
     type: image
     region: content
-  field_inn_ip:
-    weight: 4
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_ogrn_ip:
-    weight: 3
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_state:
-    weight: 5
-    label: above
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
+  name:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
 hidden:
   address: true
   billing_countries: true
   default_currency: true
+  field_contact: true
+  field_contact_phone: true
+  field_inn_ip: true
+  field_ogrn_ip: true
   is_default: true
   langcode: true
   mail: true
-  name: true
   prices_include_tax: true
   tax_registrations: true
   timezone: true

@@ -1,0 +1,10 @@
+uuid: 659e3bef-95fe-488b-a9e9-b60599e4c907
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_store
+id: commerce_store.teaser
+label: Teaser
+targetEntityType: commerce_store
+cache: true

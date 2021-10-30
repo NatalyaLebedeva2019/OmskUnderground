@@ -20,13 +20,6 @@ function mystore_forms_form_commerce_store_ip_register_form_alter
 )
 {
   $form['#validate'][] = 'mystore_forms_register_store_validate';
-  // $current_user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
-  
-  // if (isset($form['field_contact'])) {
-  //   $form['field_contact']['#default_value'] = [$current_user->field_name->value];
-  //   $form_state->setValue('field_contact', $current_user->field_name->value);
-  //   $form_state->setRebuild();
-  // }
 }
 
 /**

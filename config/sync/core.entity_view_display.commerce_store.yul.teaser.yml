@@ -1,0 +1,125 @@
+uuid: e266cfb1-cc18-46ad-a802-f5374c43f98f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.yul
+    - core.entity_view_mode.commerce_store.teaser
+    - field.field.commerce_store.yul.field_contact
+    - field.field.commerce_store.yul.field_contact_phone
+    - field.field.commerce_store.yul.field_image
+    - field.field.commerce_store.yul.field_inn_yul
+    - field.field.commerce_store.yul.field_ogrn_yul
+    - field.field.commerce_store.yul.field_state
+    - image.style.store_teaser_image
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - layout_library
+    - options
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d779cd55-d070-46d7-948f-c4ff294069af:
+            uuid: d779cd55-d070-46d7-948f-c4ff294069af
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:commerce_store:yul:field_image'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: store_teaser_image
+                  image_link: content
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          a391d30f-b10f-4719-b259-65f251be7c59:
+            uuid: a391d30f-b10f-4719-b259-65f251be7c59
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:commerce_store:yul:field_state'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 1
+          072ce563-f8d9-4c3c-ad38-39f6008129b4:
+            uuid: 072ce563-f8d9-4c3c-ad38-39f6008129b4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:commerce_store:yul:name'
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+  layout_library:
+    enable: true
+id: commerce_store.yul.teaser
+targetEntityType: commerce_store
+bundle: yul
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: store_teaser_image
+      image_link: content
+    third_party_settings: {  }
+  field_state:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  name:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+hidden:
+  address: true
+  billing_countries: true
+  default_currency: true
+  field_contact: true
+  field_contact_phone: true
+  field_inn_yul: true
+  field_ogrn_yul: true
+  is_default: true
+  langcode: true
+  mail: true
+  prices_include_tax: true
+  tax_registrations: true
+  timezone: true
+  uid: true

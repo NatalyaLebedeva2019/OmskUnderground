@@ -6,10 +6,13 @@ dependencies:
     - commerce_store.commerce_store_type.yul
     - field.field.commerce_store.yul.field_contact
     - field.field.commerce_store.yul.field_contact_phone
+    - field.field.commerce_store.yul.field_image
     - field.field.commerce_store.yul.field_inn_yul
     - field.field.commerce_store.yul.field_ogrn_yul
     - field.field.commerce_store.yul.field_state
+    - field.field.commerce_store.yul.layout_selection
   module:
+    - image
     - options
     - phone_international
 id: commerce_store.yul.default
@@ -31,6 +34,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: phone_international_formatter
+    region: content
+  field_image:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_inn_yul:
     weight: 1
@@ -61,6 +73,7 @@ hidden:
   default_currency: true
   is_default: true
   langcode: true
+  layout_selection: true
   mail: true
   name: true
   prices_include_tax: true

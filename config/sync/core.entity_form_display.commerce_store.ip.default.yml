@@ -6,11 +6,14 @@ dependencies:
     - commerce_store.commerce_store_type.ip
     - field.field.commerce_store.ip.field_contact
     - field.field.commerce_store.ip.field_contact_phone
+    - field.field.commerce_store.ip.field_image
     - field.field.commerce_store.ip.field_inn_ip
     - field.field.commerce_store.ip.field_ogrn_ip
     - field.field.commerce_store.ip.field_state
+    - image.style.thumbnail
   module:
     - address
+    - image
     - inline_entity_form
     - path
     - phone_international
@@ -56,6 +59,14 @@ content:
       exclude_countries: {  }
     third_party_settings: {  }
     type: phone_international_widget
+    region: content
+  field_image:
+    weight: 17
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_inn_ip:
     weight: 3

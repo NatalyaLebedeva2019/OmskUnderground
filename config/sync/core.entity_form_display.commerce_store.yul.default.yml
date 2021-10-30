@@ -6,11 +6,15 @@ dependencies:
     - commerce_store.commerce_store_type.yul
     - field.field.commerce_store.yul.field_contact
     - field.field.commerce_store.yul.field_contact_phone
+    - field.field.commerce_store.yul.field_image
     - field.field.commerce_store.yul.field_inn_yul
     - field.field.commerce_store.yul.field_ogrn_yul
     - field.field.commerce_store.yul.field_state
+    - field.field.commerce_store.yul.layout_selection
+    - image.style.thumbnail
   module:
     - address
+    - image
     - inline_entity_form
     - path
     - phone_international
@@ -49,13 +53,21 @@ content:
   field_contact_phone:
     weight: 16
     settings:
-      initial_country: PT
-      geolocation: false
-      exclude_countries: {  }
+      initial_country: RU
       preferred_countries:
         - PT
+      geolocation: false
+      exclude_countries: {  }
     third_party_settings: {  }
     type: phone_international_widget
+    region: content
+  field_image:
+    weight: 17
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_inn_yul:
     weight: 12
@@ -92,6 +104,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  layout_selection:
+    type: options_select
+    region: content
+    weight: 18
+    settings: {  }
     third_party_settings: {  }
   mail:
     type: email_default

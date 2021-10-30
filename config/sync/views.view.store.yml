@@ -2,6 +2,8 @@ uuid: 68c1c6fd-a032-4276-84b3-9766b764d0e2
 langcode: ru
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.commerce_store.teaser
   module:
     - commerce_store
 id: store
@@ -53,7 +55,7 @@ display:
         type: 'entity:commerce_store'
         options:
           relationship: none
-          view_mode: default
+          view_mode: teaser
       fields:
         name:
           table: commerce_store_field_data
@@ -180,6 +182,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

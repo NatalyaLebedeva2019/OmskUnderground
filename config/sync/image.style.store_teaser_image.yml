@@ -1,0 +1,15 @@
+uuid: 2704dc14-15af-4dc1-887f-0db1ae87216a
+langcode: ru
+status: true
+dependencies: {  }
+name: store_teaser_image
+label: 'Store Teaser Image'
+effects:
+  5ae216e7-45fb-4c3d-97da-8f53f875b063:
+    uuid: 5ae216e7-45fb-4c3d-97da-8f53f875b063
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 120
+      anchor: center-center
