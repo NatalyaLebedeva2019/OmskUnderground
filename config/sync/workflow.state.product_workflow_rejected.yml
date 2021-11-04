@@ -1,0 +1,12 @@
+uuid: 6c5736ea-539e-426a-be99-c9a617296f83
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.workflow.product_workflow
+id: product_workflow_rejected
+label: Rejected
+module: workflow
+wid: product_workflow
+weight: -8
+sysid: 0

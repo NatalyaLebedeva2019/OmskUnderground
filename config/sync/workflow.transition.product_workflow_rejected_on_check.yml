@@ -1,0 +1,18 @@
+uuid: 471c6f82-fca7-45df-942e-2d6abb738b4d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.state.product_workflow_on_check
+    - workflow.state.product_workflow_rejected
+id: product_workflow_rejected_on_check
+label: null
+module: workflow
+from_sid: product_workflow_rejected
+to_sid: product_workflow_on_check
+roles:
+  workflow_author: workflow_author
+  administrator: administrator
+  anonymous: '0'
+  authenticated: '0'
+  store: '0'

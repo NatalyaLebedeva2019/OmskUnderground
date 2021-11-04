@@ -1,0 +1,18 @@
+uuid: ec285012-623f-47d9-bd61-34a58cc41dee
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.state.product_workflow_approved
+    - workflow.state.product_workflow_creation
+id: product_workflow_creation_approved
+label: null
+module: workflow
+from_sid: product_workflow_creation
+to_sid: product_workflow_approved
+roles:
+  administrator: administrator
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  store: '0'

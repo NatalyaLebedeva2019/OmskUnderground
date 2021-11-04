@@ -1,0 +1,26 @@
+uuid: 0347a90e-f7be-4f0d-abbb-9e6d3a2e993b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.taxonomy_term.field_product_type
+    - taxonomy.vocabulary.catalog
+id: taxonomy_term.catalog.field_product_type
+field_name: field_product_type
+entity_type: taxonomy_term
+bundle: catalog
+label: 'Product type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: beb1e778-cb33-4cc9-8bd3-550db39352c0
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

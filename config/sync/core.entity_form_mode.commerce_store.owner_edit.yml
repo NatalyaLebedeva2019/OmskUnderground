@@ -1,0 +1,10 @@
+uuid: 94c7a356-12d4-470b-a372-c684a9368a82
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_store
+id: commerce_store.owner_edit
+label: 'Owner Edit'
+targetEntityType: commerce_store
+cache: true

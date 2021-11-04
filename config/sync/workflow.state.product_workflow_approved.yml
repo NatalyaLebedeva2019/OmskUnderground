@@ -1,0 +1,12 @@
+uuid: 728f5125-d39e-4689-95f0-4dd6a1039479
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.workflow.product_workflow
+id: product_workflow_approved
+label: Approved
+module: workflow
+wid: product_workflow
+weight: -8
+sysid: 0

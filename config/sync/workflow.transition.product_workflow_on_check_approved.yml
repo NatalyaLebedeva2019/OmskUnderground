@@ -1,0 +1,18 @@
+uuid: e460e352-6d56-4f2d-9553-4d9b91fc9dab
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.state.product_workflow_approved
+    - workflow.state.product_workflow_on_check
+id: product_workflow_on_check_approved
+label: null
+module: workflow
+from_sid: product_workflow_on_check
+to_sid: product_workflow_approved
+roles:
+  administrator: administrator
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  store: '0'

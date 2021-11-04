@@ -13,6 +13,7 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access wishlist'
+  - 'create product_workflow workflow_transition'
   - 'create status workflow_transition'
   - 'create store_workflow workflow_transition'
   - 'delete own default commerce_wishlist'

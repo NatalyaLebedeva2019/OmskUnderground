@@ -1,0 +1,11 @@
+uuid: db1789f4-bf4b-4713-ab2a-c81b51903a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.clothing
+id: commerce_product.clothing
+target_entity_type_id: commerce_product
+target_bundle: clothing
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,12 @@
+uuid: b3533e81-b872-436a-9757-ce4f4afce007
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.workflow.product_workflow
+id: product_workflow_creation
+label: Creation
+module: workflow
+wid: product_workflow
+weight: -11
+sysid: 1

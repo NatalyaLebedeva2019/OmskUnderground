@@ -1,0 +1,16 @@
+uuid: 937f08b2-ec2f-4d80-9226-fd04b9297a0b
+langcode: ru
+status: true
+dependencies: {  }
+id: product_workflow
+label: 'Product Workflow'
+module: workflow
+options:
+  name_as_title: 0
+  fieldset: 0
+  options: radios
+  schedule_enable: true
+  schedule_timezone: 1
+  always_update_entity: 0
+  comment_log_node: 1
+  watchdog_log: 1

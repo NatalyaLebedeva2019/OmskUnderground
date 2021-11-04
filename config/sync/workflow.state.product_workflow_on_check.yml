@@ -1,0 +1,12 @@
+uuid: fe8d698a-8eb1-4cf4-b034-abe030d820ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.workflow.product_workflow
+id: product_workflow_on_check
+label: 'On check'
+module: workflow
+wid: product_workflow
+weight: -8
+sysid: 0

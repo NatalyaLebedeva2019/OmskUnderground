@@ -1,0 +1,31 @@
+uuid: 26852afe-fbd6-496f-86cb-95335c30c606
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.catalog.field_product_type
+    - taxonomy.vocabulary.catalog
+  module:
+    - text
+id: taxonomy_term.catalog.default
+targetEntityType: taxonomy_term
+bundle: catalog
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_product_type:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true

@@ -10,7 +10,6 @@ dependencies:
     - field.field.commerce_store.yul.field_inn_yul
     - field.field.commerce_store.yul.field_ogrn_yul
     - field.field.commerce_store.yul.field_state
-    - field.field.commerce_store.yul.layout_selection
     - image.style.thumbnail
   module:
     - address
@@ -104,12 +103,6 @@ content:
     region: content
     settings:
       include_locked: true
-    third_party_settings: {  }
-  layout_selection:
-    type: options_select
-    region: content
-    weight: 18
-    settings: {  }
     third_party_settings: {  }
   mail:
     type: email_default

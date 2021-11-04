@@ -49,6 +49,7 @@
         "drupal/core": "^9.1",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/ds": "^3.13",
+        "drupal/form_mode_control": "^2.0",
         "drupal/forms_steps": "^1.5",
         "drupal/layout_library": "^1.0@beta",
         "drupal/mail_login": "^2.4",

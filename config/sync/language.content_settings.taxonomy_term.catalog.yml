@@ -1,0 +1,11 @@
+uuid: 088f0799-0fda-4d58-8a63-e94b043352c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.catalog
+id: taxonomy_term.catalog
+target_entity_type_id: taxonomy_term
+target_bundle: catalog
+default_langcode: site_default
+language_alterable: false

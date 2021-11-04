@@ -1,0 +1,12 @@
+uuid: 785c1c73-1f9c-4057-94d8-70e2bb3b218b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.state.product_workflow_on_check
+id: product_workflow_on_check_on_check
+label: null
+module: workflow
+from_sid: product_workflow_on_check
+to_sid: product_workflow_on_check
+roles: {  }

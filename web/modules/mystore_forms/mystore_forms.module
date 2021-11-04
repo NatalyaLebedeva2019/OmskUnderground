@@ -9,10 +9,16 @@
  * @see https://www.drupal.org/node/2217931
  */
 
+use \Drupal\Core\Entity\EntityInterface;
+use \Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use \Drupal\Core\Link;
+use \Drupal\Core\Url;
+use \Drupal\workflow\Entity\WorkflowState;
+
 /**
  * Implements hook_form_FORM_ID_alter.
  */
-function mystore_forms_form_commerce_store_ip_register_form_alter
+function mystore_forms_form_commerce_store_ip_add_form_alter
 (
   &$form,
   \Drupal\Core\Form\FormStateInterface $form_state,
@@ -20,12 +26,13 @@ function mystore_forms_form_commerce_store_ip_register_form_alter
 )
 {
   $form['#validate'][] = 'mystore_forms_register_store_validate';
+  $form['actions']['submit']['#submit'][] = 'mystore_forms_redirect_to_user_page';
 }
 
 /**
  * Implements hook_form_FORM_ID_alter.
  */
-function mystore_forms_form_commerce_store_yl_register_form_alter
+function mystore_forms_form_commerce_store_yl_add_form_alter
 (
   &$form,
   \Drupal\Core\Form\FormStateInterface $form_state,
@@ -33,6 +40,61 @@ function mystore_forms_form_commerce_store_yl_register_form_alter
 )
 {
   $form['#validate'][] = 'mystore_forms_register_store_validate';
+  $form['actions']['submit']['#submit'][] = 'mystore_forms_redirect_to_user_page';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter.
+ */
+function mystore_forms_form_commerce_store_ip_edit_form_alter
+(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $form_id
+)
+{
+  $form['#validate'][] = 'mystore_forms_register_store_validate';
+  $form['actions']['submit']['#submit'][] = 'mystore_forms_redirect_to_user_page';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter.
+ */
+function mystore_forms_form_commerce_store_yl_edit_form_alter
+(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $form_id
+)
+{
+  $form['#validate'][] = 'mystore_forms_register_store_validate';
+  $form['actions']['submit']['#submit'][] = 'mystore_forms_redirect_to_user_page';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter.
+ */
+function mystore_forms_form_commerce_store_ip_delete_form_alter
+(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $form_id
+)
+{
+  $form['actions']['submit']['#submit'][] = 'mystore_forms_redirect_to_user_page';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter.
+ */
+function mystore_forms_form_commerce_store_yl_delete_form_alter
+(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $form_id
+)
+{
+  $form['actions']['submit']['#submit'][] = 'mystore_forms_redirect_to_user_page';
 }
 
 function mystore_forms_register_store_validate
@@ -52,5 +114,54 @@ function mystore_forms_register_store_validate
   }
   if (isset($form['field_inn_yul']) && strlen($form_state->getValue('field_inn_yul')[0]['value']) < 10) {
     $form_state->setErrorByName('field_inn_yul', t('Invalid INN format.'));
+  }
+}
+
+function mystore_forms_redirect_to_user_page
+(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state
+)
+{
+  $form_state->setRedirectUrl(Url::fromRoute('user.page')); 
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function mystore_forms_entity_extra_field_info() {
+  $extra = [];
+
+  $extra['commerce_store']['ip']['display']['edit_link'] = [
+    'label' => t('Edit store'),
+  ];
+  $extra['commerce_store']['ip']['display']['delete_link'] = [
+    'label' => t('Delete store'),
+  ];
+
+  $extra['commerce_store']['yul']['display']['edit_link'] = [
+    'label' => t('Edit store'),
+  ];
+  $extra['commerce_store']['yul']['display']['delete_link'] = [
+    'label' => t('Delete store'),
+  ];
+
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function mystore_forms_commerce_store_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('edit_link')) {
+    $url = $entity->toUrl('edit-form');
+    $link = Link::fromTextAndUrl('Edit store', $url);
+    $build['edit_link'] = $link->toRenderable();
+  }
+
+  if ($display->getComponent('delete_link')) {
+    $url = $entity->toUrl('delete-form');
+    $link = Link::fromTextAndUrl('Delete store', $url);
+    $build['delete_link'] = $link->toRenderable();
   }
 }

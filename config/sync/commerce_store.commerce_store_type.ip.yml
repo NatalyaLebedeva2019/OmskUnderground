@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 id: ip
 label: ИП
-description: ''
+description: 'Индивидуальный предприниматель'
 traits: {  }
 locked: false

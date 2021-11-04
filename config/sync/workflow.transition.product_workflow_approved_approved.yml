@@ -1,0 +1,12 @@
+uuid: 74bcd1ef-9a89-47b2-8f0d-d1d157d75d4e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - workflow.state.product_workflow_approved
+id: product_workflow_approved_approved
+label: null
+module: workflow
+from_sid: product_workflow_approved
+to_sid: product_workflow_approved
+roles: {  }
