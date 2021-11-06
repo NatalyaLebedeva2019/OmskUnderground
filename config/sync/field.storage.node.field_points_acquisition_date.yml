@@ -1,0 +1,22 @@
+uuid: 3f21048f-41e5-4428-97da-b9ca893ed6fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: Gt9sSymXaKQWPUL4TJLOdsjgG3PGmV2QpZv4Ql_5rGE
+id: node.field_points_acquisition_date
+field_name: field_points_acquisition_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

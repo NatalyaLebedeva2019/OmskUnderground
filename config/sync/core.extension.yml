@@ -21,6 +21,7 @@ module:
   commerce_promotion: 0
   commerce_store: 0
   commerce_tax: 0
+  commerce_user_points: 0
   commerce_wishlist: 0
   config: 0
   contact: 0

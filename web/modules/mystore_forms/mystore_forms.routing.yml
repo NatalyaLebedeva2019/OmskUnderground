@@ -1,0 +1,7 @@
+mystore_forms.select_product_category:
+  path: '/mystore-forms/select-product-category'
+  defaults:
+    _title: 'Select product category'
+    _form: 'Drupal\mystore_forms\Form\SelectProductCategoryForm'
+  requirements:
+    _permission: 'access content'

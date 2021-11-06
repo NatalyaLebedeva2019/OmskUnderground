@@ -1,0 +1,7 @@
+user_register_points: '0'
+order_point_discount: '3'
+day_point_discount: '2'
+date_point_discount: '0'
+threshold_value: '50'
+_core:
+  default_config_hash: 5vtqnJIwP4wIdGIq27CTWHMsNvKCBVNU0uf-wBy-byg

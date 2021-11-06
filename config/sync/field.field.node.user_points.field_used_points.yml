@@ -1,0 +1,25 @@
+uuid: 8bada355-9c44-49c3-8d5e-59846ab9a93b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_used_points
+    - node.type.user_points
+_core:
+  default_config_hash: PiUpxY3c5-0DI3JcaycPQWpkeMGvjiAP-yayySRQeP4
+id: node.user_points.field_used_points
+field_name: field_used_points
+entity_type: node
+bundle: user_points
+label: 'Used Points'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

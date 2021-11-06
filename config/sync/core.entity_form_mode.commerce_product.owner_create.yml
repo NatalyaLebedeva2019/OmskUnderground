@@ -1,0 +1,10 @@
+uuid: 847976fb-f87a-479e-ab81-eec51ff2c9c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.owner_create
+label: 'Owner Create'
+targetEntityType: commerce_product
+cache: true

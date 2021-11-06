@@ -1,0 +1,29 @@
+uuid: 193e605a-cace-43d2-8f1a-a3e07f5ddadf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: 3xaUVah6SGFGa6KxXl-DmwQYL42ZQQMFu3YHNXBqZUI
+id: node.field_point_status
+field_name: field_point_status
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Valid
+    -
+      value: 0
+      label: Expired
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

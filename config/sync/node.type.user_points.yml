@@ -1,0 +1,20 @@
+uuid: 3a04ef5e-e5ee-47cb-b36d-1c9aaf460bfe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: r4UF02d6GIVsMRJlJRMgudIFuL0jRWKwWrd80kffODA
+name: 'Commerce User Points'
+type: user_points
+description: 'Contains nodes for user points while registering on site or while making payments for order.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

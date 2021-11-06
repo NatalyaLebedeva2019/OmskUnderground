@@ -1,0 +1,80 @@
+uuid: ed646e61-b7f9-46c1-97cf-6225ddfeca3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.user_points.field_earned_points
+    - field.field.node.user_points.field_point_status
+    - field.field.node.user_points.field_point_type
+    - field.field.node.user_points.field_points_acquisition_date
+    - field.field.node.user_points.field_used_points
+    - field.field.node.user_points.field_validity_date
+    - node.type.user_points
+  module:
+    - datetime
+    - options
+    - user
+_core:
+  default_config_hash: gXsSr6Es6RiogedLkw6sbQyed9n0Q4XU0rXOAFXoSw0
+id: node.user_points.default
+targetEntityType: node
+bundle: user_points
+mode: default
+content:
+  field_earned_points:
+    type: number_integer
+    weight: 1
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_point_status:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_point_type:
+    type: list_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_points_acquisition_date:
+    type: datetime_default
+    weight: 4
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_used_points:
+    type: number_integer
+    weight: 5
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_validity_date:
+    type: datetime_default
+    weight: 6
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

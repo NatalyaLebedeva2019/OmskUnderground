@@ -1,0 +1,22 @@
+uuid: 264052c9-0f59-4fd4-91fc-38dcf1328183
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: SwebT98ZgnYcpItgD4w46zNMWSpmLr4L-LYviAei1Go
+id: node.field_earned_points
+field_name: field_earned_points
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

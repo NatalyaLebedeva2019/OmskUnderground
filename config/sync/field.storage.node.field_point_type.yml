@@ -1,0 +1,35 @@
+uuid: d4f75f09-2368-41a2-bc8d-66a7f7e4329a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: I3xCbjkKF7mR94o7pjsLFLX7zj-JcHKEo--WGCMrAaU
+id: node.field_point_type
+field_name: field_point_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: account-creation
+      label: 'Join point'
+    -
+      value: shopping
+      label: 'Shopping point'
+    -
+      value: birthday
+      label: 'Birthday point'
+    -
+      value: gift
+      label: 'Gift point'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

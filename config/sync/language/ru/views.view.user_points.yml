@@ -1,0 +1,47 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        uid:
+          label: Автор
+          separator: ', '
+        field_point_type:
+          separator: ', '
+        field_earned_points:
+          separator: ', '
+        field_used_points:
+          separator: ', '
+        field_points_acquisition_date:
+          separator: ', '
+        field_validity_date:
+          separator: ', '
+        field_point_status:
+          separator: ', '
+        operations:
+          label: Действия
+      filters:
+        uid:
+          expose:
+            label: Автор
+  page_1:
+    display_title: Page

@@ -1,0 +1,23 @@
+uuid: 0a32c97e-61aa-49d6-825c-62fdf45b5728
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_point_status
+    - node.type.user_points
+  module:
+    - options
+_core:
+  default_config_hash: 7AEb019xLxRMTxUHE8wen9leQx6T_bhRO5zKQRM2bo0
+id: node.user_points.field_point_status
+field_name: field_point_status
+entity_type: node
+bundle: user_points
+label: 'Point Status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

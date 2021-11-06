@@ -14,6 +14,7 @@ use \Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use \Drupal\Core\Link;
 use \Drupal\Core\Url;
 use \Drupal\workflow\Entity\WorkflowState;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * Implements hook_form_FORM_ID_alter.
@@ -164,4 +165,28 @@ function mystore_forms_commerce_store_view(array &$build, EntityInterface $entit
     $link = Link::fromTextAndUrl('Delete store', $url);
     $build['delete_link'] = $link->toRenderable();
   }
+}
+
+/**
+ * Implements hook_form_alter.
+ */
+function mystore_forms_form_alter(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $form_id
+) {
+  $formDisplay = $form_state->getStorage()['form_display'];
+
+  if ($formDisplay && $formDisplay->getMode() == 'owner_create') {
+    $form['actions']['submit']['#value'] = t('Save product and continue');
+    $form['actions']['submit']['#submit'][] = 'mystore_forms_redirect_to_product_attributes';
+  }
+}
+
+function mystore_forms_redirect_to_product_attributes(
+  &$form,
+  \Drupal\Core\Form\FormStateInterface $form_state
+) {
+  $product = \Drupal::routeMatch()->getParameter('commerce_product');
+  $form_state->setRedirect('entity.commerce_product_variation.collection', ['commerce_product' => $product->id()]);
 }

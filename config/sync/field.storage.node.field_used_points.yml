@@ -1,0 +1,22 @@
+uuid: e38d97cb-d8f2-43c3-91a3-1c5981c41b92
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: hymzPV9-vtMUkswDGzUbifNqFVRfw-JR8nOQriImKyY
+id: node.field_used_points
+field_name: field_used_points
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

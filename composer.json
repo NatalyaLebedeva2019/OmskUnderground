@@ -46,6 +46,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/commerce": "^2.24",
         "drupal/commerce_wishlist": "^3.0@beta",
+        "drupal/commerceuserpoints": "^9.0",
         "drupal/core": "^9.1",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/ds": "^3.13",
@@ -61,6 +62,7 @@
         "drupalcommerce/commerce_base": "9.x-dev",
         "drush/drush": "^10.6",
         "jackocnr/intl-tel-input": "^17.0",
+        "roave/better-reflection": "^4.12",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "webmozart/path-util": "^2.3"
