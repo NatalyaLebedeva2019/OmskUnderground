@@ -1,0 +1,25 @@
+uuid: 31b27826-0333-4533-8574-bdfb4b3fca68
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.catalog
+  module:
+    - system
+  theme:
+    - mystore
+id: catalog
+theme: mystore
+region: header_menu
+weight: -9
+provider: null
+plugin: 'system_menu_block:catalog'
+settings:
+  id: 'system_menu_block:catalog'
+  label: Catalog
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

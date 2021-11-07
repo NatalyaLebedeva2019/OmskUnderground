@@ -8,11 +8,8 @@ dependencies:
     - field.field.user.user.field_name
     - field.field.user.user.field_phone
     - field.field.user.user.field_tokens
-    - field.field.user.user.field_tokens_procent
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -26,14 +23,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  user_picture:
-    type: image_image
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   commerce_remote_id: true
   contact: true
@@ -41,7 +30,7 @@ hidden:
   field_name: true
   field_phone: true
   field_tokens: true
-  field_tokens_procent: true
   langcode: true
   language: true
   timezone: true
+  user_picture: true

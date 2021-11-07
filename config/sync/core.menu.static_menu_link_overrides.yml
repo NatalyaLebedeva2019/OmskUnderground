@@ -5,6 +5,30 @@ definitions:
     parent: ''
     weight: 0
     expanded: false
+  commerce_base__front_page:
+    enabled: false
+    menu_name: main
+    parent: ''
+    expanded: false
+    weight: 0
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__6':
+    weight: -50
+    parent: 'menu_link_content:de7cf68b-752f-4d88-a499-73ee9062a73b'
+    menu_name: catalog
+    enabled: true
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__5':
+    weight: -49
+    parent: 'menu_link_content:de7cf68b-752f-4d88-a499-73ee9062a73b'
+    menu_name: catalog
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__1':
+    weight: -48
+    parent: 'menu_link_content:de7cf68b-752f-4d88-a499-73ee9062a73b'
+    menu_name: catalog
+    expanded: true
+    enabled: true
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
 langcode: ru

@@ -1,0 +1,18 @@
+name: MyStore
+type: theme
+base theme: classy
+description: A flexible theme with a responsive, mobile-first layout.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - mystore/global
+  - mystore/ionicons
+regions:
+  header_brand: 'Header Brand'
+  header_menu: 'Header Menu'
+  header_end: 'Header End'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  footer: 'Footer'

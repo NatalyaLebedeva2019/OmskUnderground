@@ -1,0 +1,11 @@
+uuid: cce47e8b-a34f-48a4-b9c4-3f1ad9d4a802
+langcode: en
+status: true
+dependencies: {  }
+id: is_underlined_has_text_grey
+label: 'is-underlined has-text-grey'
+classes: 'is-underlined has-text-grey'
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

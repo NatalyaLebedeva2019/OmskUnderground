@@ -1,0 +1,11 @@
+uuid: 0b07b752-7077-46d6-8dd9-9a8566e87681
+langcode: en
+status: true
+dependencies: {  }
+id: mr_5
+label: mr-5
+classes: mr-5
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

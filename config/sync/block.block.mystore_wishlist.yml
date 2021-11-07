@@ -1,0 +1,20 @@
+uuid: cc941b63-795e-475f-b831-9e7a75abe535
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_wishlist
+  theme:
+    - mystore
+id: mystore_wishlist
+theme: mystore
+region: header_end
+weight: -8
+provider: null
+plugin: commerce_wishlist
+settings:
+  id: commerce_wishlist
+  label: Wishlist
+  provider: commerce_wishlist
+  label_display: '0'
+visibility: {  }

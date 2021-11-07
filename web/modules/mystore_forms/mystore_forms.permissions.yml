@@ -2,3 +2,6 @@ administer mystore_forms configuration:
   title: 'Administer mystore_forms configuration'
   description: 'Optional description.'
   restrict access: true
+
+select_product_category:
+  title: 'Create product: select product category'

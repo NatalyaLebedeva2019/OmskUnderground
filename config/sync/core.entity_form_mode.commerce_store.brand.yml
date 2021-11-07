@@ -1,0 +1,10 @@
+uuid: decd41d0-9cf1-43d6-b404-79f665ff6687
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_store
+id: commerce_store.brand
+label: Brand
+targetEntityType: commerce_store
+cache: true

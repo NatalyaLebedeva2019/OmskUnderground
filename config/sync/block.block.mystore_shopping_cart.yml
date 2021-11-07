@@ -1,0 +1,24 @@
+uuid: 91f86a9b-356c-438c-8e5a-93a070b9c3d2
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - mystore
+_core:
+  default_config_hash: s0blj-MttMjnmKEuX66B0R-2HUXDx0dSLXhnrDIvQi8
+id: mystore_shopping_cart
+theme: mystore
+region: header_end
+weight: -7
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+  item_text: items
+visibility: {  }

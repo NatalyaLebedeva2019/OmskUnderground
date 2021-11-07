@@ -3,3 +3,5 @@ default_type: default
 _core:
   default_config_hash: mIj7SNqEnPV7YhIvPDAuKJeW20y8xMw9zhC2ovF9YKs
 langcode: ru
+view_modes:
+  commerce_product_variation: wishlist

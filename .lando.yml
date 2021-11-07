@@ -8,3 +8,12 @@ services:
     xdebug: true
     config:
       php: .vscode/php.ini
+  node:
+    type: node:12
+    globals:
+      yarn: "latest"
+tooling:
+  npm:
+    service: node
+  node:
+    service: node

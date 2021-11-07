@@ -1,0 +1,15 @@
+uuid: e4cbbec9-2d88-481d-9e47-2468503306df
+langcode: en
+status: true
+dependencies: {  }
+name: product_default_gallery
+label: 'Product default image'
+effects:
+  0013f55a-f399-4151-8303-5955307a380b:
+    uuid: 0013f55a-f399-4151-8303-5955307a380b
+    id: image_scale
+    weight: 1
+    data:
+      width: 920
+      height: 920
+      upscale: false

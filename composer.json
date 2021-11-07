@@ -33,6 +33,18 @@
                     "type": "zip"
                 }
             }
+        },
+        "jackmoore/colorbox": {
+            "type": "package",
+            "package": {
+                "name": "jackmoore/colorbox",
+                "version": "1.6.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackmoore/colorbox/archive/refs/heads/master.zip",
+                    "type": "zip"
+                }
+            }
         }
     },
     "config": {
@@ -44,23 +56,27 @@
         "ext-curl": "*",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
+        "drupal/bulma": "^1.0@RC",
+        "drupal/colorbox": "^1.7",
         "drupal/commerce": "^2.24",
         "drupal/commerce_wishlist": "^3.0@beta",
         "drupal/commerceuserpoints": "^9.0",
         "drupal/core": "^9.1",
         "drupal/core-composer-scaffold": "^9.1",
-        "drupal/ds": "^3.13",
         "drupal/form_mode_control": "^2.0",
         "drupal/forms_steps": "^1.5",
-        "drupal/layout_library": "^1.0@beta",
+        "drupal/layout_builder_styles": "^1.0@beta",
         "drupal/mail_login": "^2.4",
+        "drupal/page_manager": "^4.0@beta",
         "drupal/phone_international": "^3.1",
         "drupal/search_api": "^1.19",
         "drupal/swiftmailer": "^2.0",
+        "drupal/taxonomy_menu": "^3.5",
         "drupal/token": "^1.9",
         "drupal/workflow": "^1.5",
         "drupalcommerce/commerce_base": "9.x-dev",
         "drush/drush": "^10.6",
+        "jackmoore/colorbox": "^1.6",
         "jackocnr/intl-tel-input": "^17.0",
         "roave/better-reflection": "^4.12",
         "vlucas/phpdotenv": "^5.1",

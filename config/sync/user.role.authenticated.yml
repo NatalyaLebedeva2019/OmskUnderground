@@ -37,6 +37,7 @@ permissions:
   - 'update own ip commerce_store'
   - 'update own online commerce_store'
   - 'update own yul commerce_store'
+  - 'use  The form mode edit linked to  user entity( user )'
   - 'use  The form mode owner_edit linked to  commerce_store entity( ip )'
   - 'use  The form mode owner_edit linked to  commerce_store entity( yul )'
   - 'use  The form mode register linked to  commerce_store entity( ip )'

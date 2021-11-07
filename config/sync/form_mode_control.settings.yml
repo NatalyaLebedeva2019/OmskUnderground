@@ -22,3 +22,4 @@
 'use  The form mode default linked to  taxonomy_term entity( catalog )': taxonomy_term.catalog.default
 'use  The form mode owner_create linked to  commerce_product entity( default )': commerce_product.default.owner_create
 'use  The form mode default linked to  node entity( user_points )': node.user_points.default
+'use  The form mode edit linked to  user entity( user )': user.user.edit

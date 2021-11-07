@@ -158,12 +158,14 @@ function mystore_forms_commerce_store_view(array &$build, EntityInterface $entit
     $url = $entity->toUrl('edit-form');
     $link = Link::fromTextAndUrl('Edit store', $url);
     $build['edit_link'] = $link->toRenderable();
+    $build['edit_link']['#attributes']['class'][] = 'button is-link is-light ml-0 mr-0';
   }
 
   if ($display->getComponent('delete_link')) {
     $url = $entity->toUrl('delete-form');
     $link = Link::fromTextAndUrl('Delete store', $url);
     $build['delete_link'] = $link->toRenderable();
+    $build['delete_link']['#attributes']['class'][] = 'button is-danger is-inverted ml-0 mr-0';
   }
 }
 

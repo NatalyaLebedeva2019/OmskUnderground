@@ -1,0 +1,33 @@
+uuid: c54f9b76-4c13-4cd0-9ff4-7734a2ae1fc5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.store
+  module:
+    - user
+    - views
+  theme:
+    - mystore
+id: mystore_views_block__store_block_1
+theme: mystore
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'views_block:store-block_1'
+settings:
+  id: 'views_block:store-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

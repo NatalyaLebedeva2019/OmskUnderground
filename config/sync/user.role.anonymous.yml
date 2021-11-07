@@ -20,6 +20,8 @@ permissions:
   - 'duplicate own default commerce_wishlist'
   - 'search content'
   - 'update own default commerce_wishlist'
+  - 'use  The form mode edit linked to  user entity( user )'
+  - 'use  The form mode register linked to  user entity( user )'
   - 'use text format restricted_html'
   - 'view commerce_product'
   - 'view commerce_store'

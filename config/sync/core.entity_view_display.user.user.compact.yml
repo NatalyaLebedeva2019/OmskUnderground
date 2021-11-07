@@ -8,7 +8,6 @@ dependencies:
     - field.field.user.user.field_name
     - field.field.user.user.field_phone
     - field.field.user.user.field_tokens
-    - field.field.user.user.field_tokens_procent
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -36,6 +35,5 @@ hidden:
   field_name: true
   field_phone: true
   field_tokens: true
-  field_tokens_procent: true
   langcode: true
   member_for: true

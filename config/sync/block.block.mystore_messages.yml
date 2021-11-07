@@ -1,0 +1,22 @@
+uuid: 1e711499-412b-45bc-b48d-79636487e62d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mystore
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: mystore_messages
+theme: mystore
+region: breadcrumb
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

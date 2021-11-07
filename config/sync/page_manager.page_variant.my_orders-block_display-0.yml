@@ -1,0 +1,35 @@
+uuid: c74b1766-74ce-46d3-9b0d-a112d3f6d36b
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.my_orders
+    - views.view.store_orders
+  module:
+    - views
+id: my_orders-block_display-0
+label: 'Block page'
+variant: block_display
+variant_settings:
+  blocks:
+    8ca769ab-8401-4857-8da0-103f7809c7ad:
+      id: 'views_block:store_orders-store_orders'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: 8ca769ab-8401-4857-8da0-103f7809c7ad
+      context_mapping: {  }
+  id: block_display
+  uuid: a4da8050-4d1b-49f6-9028-4a4d01e7593f
+  label: null
+  weight: 0
+  page_title: 'My Orders'
+page: my_orders
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

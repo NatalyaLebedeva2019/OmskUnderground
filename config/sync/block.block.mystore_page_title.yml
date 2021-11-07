@@ -1,0 +1,20 @@
+uuid: 33c391a8-d64e-4c26-9162-dffa51348f22
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - mystore
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: mystore_page_title
+theme: mystore
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

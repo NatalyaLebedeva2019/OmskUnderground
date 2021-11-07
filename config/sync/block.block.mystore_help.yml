@@ -1,0 +1,22 @@
+uuid: ff87ef8b-9ad6-4652-9be8-33d420461395
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mystore
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: mystore_help
+theme: mystore
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

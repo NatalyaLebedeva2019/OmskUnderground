@@ -7,7 +7,6 @@ dependencies:
     - field.field.user.user.field_name
     - field.field.user.user.field_phone
     - field.field.user.user.field_tokens
-    - field.field.user.user.field_tokens_procent
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -49,13 +48,6 @@ content:
       exclude_countries: {  }
     third_party_settings: {  }
     type: phone_international_widget
-    region: content
-  field_tokens_procent:
-    weight: 7
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
     region: content
   language:
     weight: 2

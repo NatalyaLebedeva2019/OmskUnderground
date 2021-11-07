@@ -1,0 +1,16 @@
+uuid: 760e0c30-4898-45b3-9e8e-286724c6bb3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.catalog
+    - taxonomy.vocabulary.catalog
+id: catalog
+label: Catalog
+vocabulary: catalog
+depth: 0
+menu: catalog
+expanded: true
+menu_parent: 'catalog:'
+description_field_name: null
+use_term_weight_order: true

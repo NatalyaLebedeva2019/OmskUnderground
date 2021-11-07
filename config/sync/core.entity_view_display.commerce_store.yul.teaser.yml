@@ -15,14 +15,11 @@ dependencies:
   module:
     - image
     - layout_builder
-    - layout_library
     - options
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-  layout_library:
-    enable: true
 id: commerce_store.yul.teaser
 targetEntityType: commerce_store
 bundle: yul
@@ -48,7 +45,7 @@ content:
       image_link: content
     third_party_settings: {  }
   field_state:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -56,7 +53,7 @@ content:
     region: content
   name:
     type: string
-    weight: 2
+    weight: 1
     region: content
     label: hidden
     settings:

@@ -1,9 +1,0 @@
-uuid: f194af89-b400-439b-86dd-e7cbc28bff35
-langcode: en
-status: true
-dependencies: {  }
-id: register_ip
-label: 'Register IP'
-targetEntityType: node
-targetBundle: page
-layout: {  }

@@ -1,0 +1,22 @@
+uuid: 246c4d7d-72c2-4bc9-8ea7-db955a78a5a3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mystore
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: mystore_powered
+theme: mystore
+region: footer
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

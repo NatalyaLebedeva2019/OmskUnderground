@@ -1,0 +1,11 @@
+uuid: dd7f2eb5-3ff1-4ca7-8261-a3fb06b97c1d
+langcode: en
+status: true
+dependencies: {  }
+id: is_size_3
+label: is-size-3
+classes: is-size-3
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

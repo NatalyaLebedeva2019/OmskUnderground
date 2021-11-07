@@ -1,0 +1,22 @@
+uuid: 5bb8569e-35e0-401e-88ee-5fb2400acb65
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - workflow
+id: commerce_product.field_state
+field_name: field_state
+entity_type: commerce_product
+type: workflow
+settings:
+  workflow_type: product_workflow
+  allowed_values: {  }
+  allowed_values_function: ''
+module: workflow
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 221d66f0-8991-45f1-9ab1-95abb72073fd
+langcode: en
+status: true
+dependencies: {  }
+id: my_orders
+label: 'My Orders'
+description: ''
+use_admin_theme: false
+path: /store/orders
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,11 @@
+uuid: 37890e0d-fb49-45f7-837e-ab5c3a7bf403
+langcode: en
+status: true
+dependencies: {  }
+id: box
+label: box
+classes: "box\r\nmt-4\r\nmb-4"
+type: section
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

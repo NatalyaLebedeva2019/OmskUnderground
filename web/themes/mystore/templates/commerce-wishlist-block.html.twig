@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Template for the wishlist block.
+ *
+ * Available variables:
+ * - count: The number of items in the wishlist.
+ * - count_text: The text representing the number of items in the wishlist.
+ * - wishlist_entity: The wishlist entity.
+ * - url: The url to the wishlist page.
+ *
+ * @ingroup themeable
+ */
+#}
+<div {{ attributes }}>
+  <a href="{{ url }}">
+    <ion-icon
+      name="heart-half"
+      style="color:white; font-size: 25px;"
+      title="{{ count_text }}"
+    ></ion-icon>
+  </a>
+</div>

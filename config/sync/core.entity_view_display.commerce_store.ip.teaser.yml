@@ -15,6 +15,7 @@ dependencies:
   module:
     - image
     - layout_builder
+    - layout_discovery
     - options
 third_party_settings:
   layout_builder:
@@ -25,6 +26,16 @@ targetEntityType: commerce_store
 bundle: ip
 mode: teaser
 content:
+  delete_link:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  edit_link:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_image:
     weight: 0
     label: hidden
@@ -35,19 +46,19 @@ content:
     type: image
     region: content
   field_state:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
     type: list_default
-    region: content
-  name:
-    type: string
     weight: 2
     region: content
     label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
     settings:
-      link_to_entity: true
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
   address: true
