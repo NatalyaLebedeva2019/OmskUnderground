@@ -23,3 +23,31 @@
 'use  The form mode owner_create linked to  commerce_product entity( default )': commerce_product.default.owner_create
 'use  The form mode default linked to  node entity( user_points )': node.user_points.default
 'use  The form mode edit linked to  user entity( user )': user.user.edit
+creation+administrator+commerce_order_item+default: commerce_order_item.default.default
+modification+administrator+commerce_order_item+default: commerce_order_item.default.default
+creation+administrator+commerce_product+default: commerce_product.default.default
+creation+store+commerce_product+default: commerce_product.default.owner_create
+modification+administrator+commerce_product+default: commerce_product.default.default
+modification+store+commerce_product+default: commerce_product.default.owner_create
+creation+authenticated+commerce_store+ip: commerce_store.ip.register
+creation+administrator+commerce_store+ip: commerce_store.ip.default
+creation+store+commerce_store+ip: commerce_store.ip.register
+modification+authenticated+commerce_store+ip: commerce_store.ip.owner_edit
+modification+administrator+commerce_store+ip: commerce_store.ip.default
+modification+store+commerce_store+ip: commerce_store.ip.owner_edit
+creation+authenticated+commerce_store+yul: commerce_store.yul.register
+creation+administrator+commerce_store+yul: commerce_store.yul.default
+creation+store+commerce_store+yul: commerce_store.yul.register
+modification+authenticated+commerce_store+yul: commerce_store.yul.owner_edit
+modification+administrator+commerce_store+yul: commerce_store.yul.default
+modification+store+commerce_store+yul: commerce_store.yul.owner_edit
+creation+administrator+media+image: media.image.default
+modification+administrator+media+image: media.image.default
+creation+anonymous+user+user: user.user.edit
+creation+authenticated+user+user: user.user.edit
+creation+administrator+user+user: user.user.default
+creation+store+user+user: user.user.edit
+modification+anonymous+user+user: user.user.edit
+modification+authenticated+user+user: user.user.edit
+modification+administrator+user+user: user.user.default
+modification+store+user+user: user.user.edit

@@ -1,0 +1,11 @@
+uuid: 94101951-3d13-447d-ae17-f3a6d0fe0457
+langcode: en
+status: true
+dependencies: {  }
+id: is_underlined_has_text_grey_is_size_7
+label: 'is-underlined has-text-grey is-size-7'
+classes: 'is-underlined has-text-grey is-size-7'
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

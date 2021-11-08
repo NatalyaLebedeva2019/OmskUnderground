@@ -1,0 +1,11 @@
+uuid: a863cdaa-f2b7-4aba-b33f-e897fe465767
+langcode: en
+status: true
+dependencies: {  }
+id: is_size_7_has_background_grey
+label: 'is-size-7 has-background-grey'
+classes: 'is-size-7 has-background-grey'
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

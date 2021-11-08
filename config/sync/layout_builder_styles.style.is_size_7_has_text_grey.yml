@@ -1,0 +1,11 @@
+uuid: 883abddf-08dd-410e-a81d-90e562cf2443
+langcode: en
+status: true
+dependencies: {  }
+id: is_size_7_has_text_grey
+label: 'is-size-7 has-text-grey'
+classes: 'is-size-7 has-text-grey'
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

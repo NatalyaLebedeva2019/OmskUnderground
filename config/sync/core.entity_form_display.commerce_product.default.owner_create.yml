@@ -38,6 +38,13 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -52,7 +59,6 @@ hidden:
   field_state: true
   langcode: true
   path: true
-  status: true
   stores: true
   uid: true
   variations: true

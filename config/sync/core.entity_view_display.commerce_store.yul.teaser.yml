@@ -7,6 +7,7 @@ dependencies:
     - core.entity_view_mode.commerce_store.teaser
     - field.field.commerce_store.yul.field_contact
     - field.field.commerce_store.yul.field_contact_phone
+    - field.field.commerce_store.yul.field_description
     - field.field.commerce_store.yul.field_image
     - field.field.commerce_store.yul.field_inn_yul
     - field.field.commerce_store.yul.field_ogrn_yul
@@ -65,6 +66,7 @@ hidden:
   default_currency: true
   field_contact: true
   field_contact_phone: true
+  field_description: true
   field_inn_yul: true
   field_ogrn_yul: true
   is_default: true

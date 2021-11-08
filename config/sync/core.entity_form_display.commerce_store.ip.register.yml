@@ -7,6 +7,7 @@ dependencies:
     - core.entity_form_mode.commerce_store.register
     - field.field.commerce_store.ip.field_contact
     - field.field.commerce_store.ip.field_contact_phone
+    - field.field.commerce_store.ip.field_description
     - field.field.commerce_store.ip.field_image
     - field.field.commerce_store.ip.field_inn_ip
     - field.field.commerce_store.ip.field_ogrn_ip
@@ -79,6 +80,7 @@ content:
 hidden:
   billing_countries: true
   default_currency: true
+  field_description: true
   field_image: true
   field_state: true
   is_default: true

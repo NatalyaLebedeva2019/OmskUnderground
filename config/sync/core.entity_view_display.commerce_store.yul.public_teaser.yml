@@ -1,9 +1,10 @@
-uuid: 1b6545a3-e0b0-457c-a6d1-11f5c72e13ec
+uuid: 9dbf026b-b3a3-493d-8642-e311dfcf7c06
 langcode: ru
 status: true
 dependencies:
   config:
     - commerce_store.commerce_store_type.yul
+    - core.entity_view_mode.commerce_store.public_teaser
     - field.field.commerce_store.yul.field_contact
     - field.field.commerce_store.yul.field_contact_phone
     - field.field.commerce_store.yul.field_description
@@ -11,29 +12,25 @@ dependencies:
     - field.field.commerce_store.yul.field_inn_yul
     - field.field.commerce_store.yul.field_ogrn_yul
     - field.field.commerce_store.yul.field_state
-    - views.view.store_products
   module:
     - image
     - layout_builder
+    - layout_discovery
     - options
     - phone_international
-    - views
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: true
     sections:
       -
-        layout_id: layout_twocol_section
+        layout_id: layout_onecol
         layout_settings:
           label: ''
-          column_widths: 33-67
-          layout_builder_styles_style: ''
-          context_mapping: {  }
         components:
-          bab1d10a-eb12-49cb-93aa-e88cbe69628e:
-            uuid: bab1d10a-eb12-49cb-93aa-e88cbe69628e
-            region: first
+          d8ff4412-8206-442b-b3e0-d30031b42ea0:
+            uuid: d8ff4412-8206-442b-b3e0-d30031b42ea0
+            region: content
             configuration:
               id: 'field_block:commerce_store:yul:field_image'
               label: Image
@@ -43,58 +40,38 @@ third_party_settings:
                 label: hidden
                 type: image
                 settings:
-                  image_style: large
-                  image_link: ''
+                  image_style: medium
+                  image_link: content
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional:
               layout_builder_styles_style: ''
-            weight: 1
-          39663cfd-d5f7-4c4d-bb17-190e9f872dbe:
-            uuid: 39663cfd-d5f7-4c4d-bb17-190e9f872dbe
-            region: first
+            weight: 5
+          c7064bcd-7869-434a-9e87-09f0a4672e3a:
+            uuid: c7064bcd-7869-434a-9e87-09f0a4672e3a
+            region: content
             configuration:
-              id: 'field_block:commerce_store:yul:field_ogrn_yul'
-              label: 'ОГРН ЮЛ'
+              id: 'field_block:commerce_store:yul:name'
+              label: Name
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: inline
+                label: hidden
                 type: string
                 settings:
-                  link_to_entity: false
+                  link_to_entity: true
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional:
-              layout_builder_styles_style: is_size_7_has_text_grey
-            weight: 3
-          37ce243d-132d-4ca8-bb9f-96b1d10a195b:
-            uuid: 37ce243d-132d-4ca8-bb9f-96b1d10a195b
-            region: first
-            configuration:
-              id: 'field_block:commerce_store:yul:field_inn_yul'
-              label: 'ИНН ЮЛ'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: inline
-                type: string
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional:
-              layout_builder_styles_style: is_size_7_has_text_grey
-            weight: 4
-          dbd332e2-5942-4345-9db6-37e83828c0c6:
-            uuid: dbd332e2-5942-4345-9db6-37e83828c0c6
-            region: first
+              layout_builder_styles_style: ''
+            weight: 6
+          2e532dfa-aa85-4f64-a2db-049aa7a24092:
+            uuid: 2e532dfa-aa85-4f64-a2db-049aa7a24092
+            region: content
             configuration:
               id: 'field_block:commerce_store:yul:field_description'
               label: Description
@@ -102,45 +79,22 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: text_default
-                settings: {  }
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 150
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional:
-              layout_builder_styles_style: content
-            weight: 2
-          44655524-2dfb-400a-bf2f-6f8059f40680:
-            uuid: 44655524-2dfb-400a-bf2f-6f8059f40680
-            region: second
-            configuration:
-              id: 'views_block:store_products-products_by_store'
-              label: ''
-              provider: views
-              label_display: '0'
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style: ml_5
-            weight: 0
+              layout_builder_styles_style: is_size_7_has_text_grey
+            weight: 7
         third_party_settings: {  }
-id: commerce_store.yul.default
+id: commerce_store.yul.public_teaser
 targetEntityType: commerce_store
 bundle: yul
-mode: default
+mode: public_teaser
 content:
-  delete_link:
-    weight: 7
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  edit_link:
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_contact:
     weight: 3
     label: above
@@ -188,20 +142,12 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
-  my_orders:
-    weight: 9
-    settings: {  }
-    third_party_settings: {  }
-    region: first
-  my_products:
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
-    region: first
 hidden:
   address: true
   billing_countries: true
   default_currency: true
+  delete_link: true
+  edit_link: true
   field_description: true
   is_default: true
   langcode: true

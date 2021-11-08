@@ -7,6 +7,7 @@ dependencies:
     - core.entity_view_mode.commerce_store.teaser
     - field.field.commerce_store.ip.field_contact
     - field.field.commerce_store.ip.field_contact_phone
+    - field.field.commerce_store.ip.field_description
     - field.field.commerce_store.ip.field_image
     - field.field.commerce_store.ip.field_inn_ip
     - field.field.commerce_store.ip.field_ogrn_ip
@@ -15,7 +16,6 @@ dependencies:
   module:
     - image
     - layout_builder
-    - layout_discovery
     - options
 third_party_settings:
   layout_builder:
@@ -52,6 +52,16 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  my_orders:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  my_products:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   name:
     type: string
     weight: 1
@@ -66,6 +76,7 @@ hidden:
   default_currency: true
   field_contact: true
   field_contact_phone: true
+  field_description: true
   field_inn_ip: true
   field_ogrn_ip: true
   is_default: true

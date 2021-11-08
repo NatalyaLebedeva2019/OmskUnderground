@@ -5,8 +5,52 @@ dependencies:
   config:
     - field.field.taxonomy_term.catalog.field_product_type
     - taxonomy.vocabulary.catalog
+    - views.view.category_products
   module:
+    - layout_builder
+    - layout_discovery
     - text
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          73bc33e6-592f-4398-bf36-d75972fc7563:
+            uuid: 73bc33e6-592f-4398-bf36-d75972fc7563
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:catalog:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          43661706-316b-4f2f-9a9f-874a7b1e6f32:
+            uuid: 43661706-316b-4f2f-9a9f-874a7b1e6f32
+            region: content
+            configuration:
+              id: 'views_block:category_products-category_products'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: ''
+            weight: 5
+        third_party_settings: {  }
 id: taxonomy_term.catalog.default
 targetEntityType: taxonomy_term
 bundle: catalog

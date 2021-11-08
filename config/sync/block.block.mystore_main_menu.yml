@@ -1,6 +1,6 @@
 uuid: 10cb1c03-a22a-47a0-b8d2-d52cd003a06d
 langcode: ru
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main

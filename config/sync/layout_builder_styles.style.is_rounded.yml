@@ -1,0 +1,11 @@
+uuid: fb4c3527-9727-4122-b9dd-5b350f6151f4
+langcode: en
+status: true
+dependencies: {  }
+id: is_rounded
+label: is-rounded
+classes: is-rounded
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

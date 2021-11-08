@@ -17,7 +17,7 @@ provider: null
 plugin: 'system_menu_block:add-store'
 settings:
   id: 'system_menu_block:add-store'
-  label: 'Начать продавать'
+  label: 'I am Store'
   provider: system
   label_display: visible
   level: 1

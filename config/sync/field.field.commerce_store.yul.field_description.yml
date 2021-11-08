@@ -1,0 +1,23 @@
+uuid: 59aabed6-9206-424e-8076-972947f228ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.yul
+    - field.storage.commerce_store.field_description
+  module:
+    - text
+id: commerce_store.yul.field_description
+field_name: field_description
+entity_type: commerce_store
+bundle: yul
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

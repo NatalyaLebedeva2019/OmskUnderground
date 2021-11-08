@@ -1,0 +1,10 @@
+uuid: 83d2e4e3-3ff8-41de-85cd-c498b2acdcf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_store
+id: commerce_store.public_teaser
+label: 'Public Teaser'
+targetEntityType: commerce_store
+cache: true

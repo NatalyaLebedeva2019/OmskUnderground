@@ -11,8 +11,111 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
+    - layout_builder
+    - layout_discovery
     - phone_international
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 25-75
+          layout_builder_styles_style: ''
+          context_mapping: {  }
+        components:
+          cab22f0b-0456-4327-b5ba-e99276a4ed7d:
+            uuid: cab22f0b-0456-4327-b5ba-e99276a4ed7d
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:user:user:user_picture'
+              formatter:
+                type: image
+                settings:
+                  image_style: thumbnail
+                  image_link: content
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 0
+          e894d263-d0ed-45ce-b9d7-82861bb0bb1b:
+            uuid: e894d263-d0ed-45ce-b9d7-82861bb0bb1b
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:member_for'
+            additional: {  }
+            weight: 2
+          8c107047-0816-4fd8-9290-4c57c4c25719:
+            uuid: 8c107047-0816-4fd8-9290-4c57c4c25719
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              layout_builder_styles_style: ''
+            weight: 0
+          6722c628-e84c-4d36-a8fc-da3fb42ed917:
+            uuid: 6722c628-e84c-4d36-a8fc-da3fb42ed917
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:user:user:field_phone'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: phone_international_formatter
+            additional: {  }
+            weight: 1
+          e217c35f-c06e-49c8-bfde-acf142ef4970:
+            uuid: e217c35f-c06e-49c8-bfde-acf142ef4970
+            region: second
+            configuration:
+              id: 'field_block:user:user:mail'
+              label: Email
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: email_mailto
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+            additional:
+              layout_builder_styles_style: ''
+            weight: 3
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.default
@@ -47,6 +150,8 @@ content:
   member_for:
     weight: 5
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image
     weight: 0

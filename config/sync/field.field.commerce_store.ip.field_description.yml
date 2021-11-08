@@ -1,0 +1,23 @@
+uuid: 2a5dfc8c-d4b5-4344-b25b-c4f3c742d143
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.ip
+    - field.storage.commerce_store.field_description
+  module:
+    - text
+id: commerce_store.ip.field_description
+field_name: field_description
+entity_type: commerce_store
+bundle: ip
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+field_type: text_with_summary

@@ -1,0 +1,35 @@
+uuid: be9605dd-f754-48d2-b6bd-085574afadff
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.stores
+    - views.view.stores
+  module:
+    - views
+id: stores-block_display-0
+label: 'Block page'
+variant: block_display
+variant_settings:
+  blocks:
+    93b629b8-5392-4d83-8466-fcd389743bab:
+      id: 'views_block:stores-public_stores'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: 93b629b8-5392-4d83-8466-fcd389743bab
+      context_mapping: {  }
+  id: block_display
+  uuid: 496fa6e6-7f4c-42c3-82e9-1336a7356c83
+  label: null
+  weight: 0
+  page_title: Brands
+page: stores
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

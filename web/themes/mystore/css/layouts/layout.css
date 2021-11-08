@@ -11811,3 +11811,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .field--name-field-images .field__item:nth-child(n+6) {
   display: none;
 }
+
+a {
+  color: unset;
+}

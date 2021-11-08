@@ -7,6 +7,7 @@ dependencies:
     - core.entity_form_mode.commerce_store.owner_edit
     - field.field.commerce_store.yul.field_contact
     - field.field.commerce_store.yul.field_contact_phone
+    - field.field.commerce_store.yul.field_description
     - field.field.commerce_store.yul.field_image
     - field.field.commerce_store.yul.field_inn_yul
     - field.field.commerce_store.yul.field_ogrn_yul
@@ -16,6 +17,7 @@ dependencies:
     - address
     - image
     - phone_international
+    - text
 id: commerce_store.yul.owner_edit
 targetEntityType: commerce_store
 bundle: yul
@@ -46,6 +48,16 @@ content:
     third_party_settings: {  }
     type: phone_international_widget
     region: content
+  field_description:
+    type: text_textarea_with_summary
+    weight: 6
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
   field_image:
     weight: 5
     settings:

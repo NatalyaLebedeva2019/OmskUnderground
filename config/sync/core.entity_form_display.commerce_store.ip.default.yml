@@ -6,6 +6,7 @@ dependencies:
     - commerce_store.commerce_store_type.ip
     - field.field.commerce_store.ip.field_contact
     - field.field.commerce_store.ip.field_contact_phone
+    - field.field.commerce_store.ip.field_description
     - field.field.commerce_store.ip.field_image
     - field.field.commerce_store.ip.field_inn_ip
     - field.field.commerce_store.ip.field_ogrn_ip
@@ -17,6 +18,7 @@ dependencies:
     - inline_entity_form
     - path
     - phone_international
+    - text
     - workflow
 id: commerce_store.ip.default
 targetEntityType: commerce_store
@@ -59,6 +61,16 @@ content:
       exclude_countries: {  }
     third_party_settings: {  }
     type: phone_international_widget
+    region: content
+  field_description:
+    weight: 18
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
     region: content
   field_image:
     weight: 17

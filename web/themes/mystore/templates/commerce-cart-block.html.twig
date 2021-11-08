@@ -1,6 +1,6 @@
-<div{{ attributes }}>
-  <div class="cart-block--summary">
-    <a class="cart-block--link__expand" href="{{ url }}">
+<div>
+  <div class="navbar-item has-dropdown  is-hoverable">
+    <a class="navbar-link">
       <span
         class="cart-block--summary__icon"
         title="{{ count_text }}"
@@ -11,17 +11,16 @@
         ></ion-icon>
       </span>
     </a>
-  </div>
-  {% if content %}
-  <div class="cart-block--contents">
-    <div class="cart-block--contents__inner">
-      <div class="cart-block--contents__items">
-        {{ content }}
+    {% if content %}
+      <div class="navbar-dropdown is-right">
+          <div class="navbar-item">
+            {{ content }}
+          </div>
+          <div class="button is-success">
+            {{ links }}
+          </div>
       </div>
-      <div class="cart-block--contents__links">
-        {{ links }}
-      </div>
-    </div>
+    {% endif %}
   </div>
-  {% endif %}
+  
 </div>

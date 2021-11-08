@@ -5,23 +5,20 @@
  * Functions to support theming in the mystore theme.
  */
 
-/**
- * Implements hook_preprocess_HOOK() for html.html.twig.
- */
-function mystore_preprocess_html(&$variables) {
-
-}
+use Drupal\Core\Access\AccessResult;
 
 /**
- * Implements hook_preprocess_HOOK() for page.html.twig.
+ * Implements template_preprocess_block.
  */
-function mystore_preprocess_page(&$variables) {
+function mystore_preprocess_block__mystore_nachatprodavat(&$variables)
+{
+  $stores = \Drupal::entityTypeManager()
+    ->getStorage('commerce_store')
+    ->loadByProperties([
+      'uid' => \Drupal::currentUser()->id(),
+    ]);
 
-}
-
-/**
- * Implements hook_preprocess_HOOK() for node.html.twig.
- */
-function mystore_preprocess_node(&$variables) {
-
+  if (count($stores) > 0) {
+    $variables = [];
+  }
 }
