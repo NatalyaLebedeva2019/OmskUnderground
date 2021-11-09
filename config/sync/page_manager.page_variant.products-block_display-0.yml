@@ -1,0 +1,35 @@
+uuid: 01ccd24b-8ca0-4909-a620-157b8be41f03
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.products
+    - views.view.category_products
+  module:
+    - views
+id: products-block_display-0
+label: 'Block page'
+variant: block_display
+variant_settings:
+  blocks:
+    06ac7c14-600d-4e4d-8f94-f5a8a14de33b:
+      id: 'views_block:category_products-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: 06ac7c14-600d-4e4d-8f94-f5a8a14de33b
+      context_mapping: {  }
+  id: block_display
+  uuid: e71c72c5-70af-44d8-b36d-2fb17da1dcbe
+  label: null
+  weight: 0
+  page_title: Products
+page: products
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,27 @@
+uuid: b3e565a5-bfe2-4f4c-bac8-ff4328f62b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.create_new_product
+  module:
+    - simple_block
+    - system
+  theme:
+    - mystore
+id: createnewproduct
+theme: mystore
+region: content
+weight: 0
+provider: null
+plugin: 'simple_block:create_new_product'
+settings:
+  id: 'simple_block:create_new_product'
+  label: 'Create new product'
+  provider: simple_block
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '*/store/products'
+    negate: false

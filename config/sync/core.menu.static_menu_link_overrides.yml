@@ -24,10 +24,22 @@ definitions:
     expanded: true
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__1':
-    weight: -48
-    parent: 'menu_link_content:de7cf68b-752f-4d88-a499-73ee9062a73b'
-    menu_name: catalog
     expanded: true
+    parent: 'menu_link_content:880b51e3-9420-4fa8-bc5b-ca57ce3c9e6f'
+    weight: 0
+    menu_name: catalog
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__3':
+    parent: 'menu_link_content:880b51e3-9420-4fa8-bc5b-ca57ce3c9e6f'
+    weight: 0
+    expanded: true
+    enabled: true
+    menu_name: catalog
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__2':
+    expanded: true
+    parent: 'menu_link_content:880b51e3-9420-4fa8-bc5b-ca57ce3c9e6f'
+    weight: 0
+    menu_name: catalog
     enabled: true
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

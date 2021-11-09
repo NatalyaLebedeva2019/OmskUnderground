@@ -100,9 +100,9 @@ display:
           automatic_width: true
           alignment: horizontal
           col_class_default: true
-          col_class_custom: ''
+          col_class_custom: 'column is-one-quarter'
           row_class_default: true
-          row_class_custom: ''
+          row_class_custom: 'columns is-1'
       row:
         type: 'entity:commerce_product'
         options:
@@ -389,6 +389,25 @@ display:
         operator: AND
         groups:
           1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+      tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'All Products'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      arguments: {  }
+      defaults:
+        arguments: false
     cache_metadata:
       max-age: -1
       contexts:

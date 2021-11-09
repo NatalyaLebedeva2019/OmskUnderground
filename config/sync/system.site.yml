@@ -1,11 +1,11 @@
-uuid: f93b0649-0d08-4aab-b17d-c2f25e328123
+uuid: 7450f41e-9f23-4a86-a3d8-496413e7ce55
 name: 'My store'
 mail: mestore@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /stores
 admin_compact_mode: false
 weight_select_max: 100
 langcode: ru

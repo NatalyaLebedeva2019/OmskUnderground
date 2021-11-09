@@ -196,6 +196,16 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
+  my_orders:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    region: first
+  my_products:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   address: true
   billing_countries: true

@@ -23,6 +23,7 @@
 'use  The form mode owner_create linked to  commerce_product entity( default )': commerce_product.default.owner_create
 'use  The form mode default linked to  node entity( user_points )': node.user_points.default
 'use  The form mode edit linked to  user entity( user )': user.user.edit
+'use  The form mode default linked to  commerce_store entity( online )': commerce_store.online.default
 creation+administrator+commerce_order_item+default: commerce_order_item.default.default
 modification+administrator+commerce_order_item+default: commerce_order_item.default.default
 creation+administrator+commerce_product+default: commerce_product.default.default
@@ -34,7 +35,7 @@ creation+administrator+commerce_store+ip: commerce_store.ip.default
 creation+store+commerce_store+ip: commerce_store.ip.register
 modification+authenticated+commerce_store+ip: commerce_store.ip.owner_edit
 modification+administrator+commerce_store+ip: commerce_store.ip.default
-modification+store+commerce_store+ip: commerce_store.ip.owner_edit
+modification+store+commerce_store+ip: commerce_store.ip.default
 creation+authenticated+commerce_store+yul: commerce_store.yul.register
 creation+administrator+commerce_store+yul: commerce_store.yul.default
 creation+store+commerce_store+yul: commerce_store.yul.register

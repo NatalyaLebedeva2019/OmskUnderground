@@ -97,9 +97,7 @@ theme:
   seven: 0
   stable: 0
   classy: 0
-  omsk_ungd: 0
   mystore: 0
-  bulma: 0
 profile: commerce_base
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

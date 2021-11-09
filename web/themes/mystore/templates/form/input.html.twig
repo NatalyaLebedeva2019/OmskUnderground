@@ -10,4 +10,4 @@
  * @see template_preprocess_input()
  */
 #}
-<input{{ attributes.type == 'text' ? attributes.addClass('input') : attributes }} />{{ children }}
+<input {{ attributes.type == 'text' or attributes.type == 'email' or attributes.type == 'password' or attributes.type == 'tel' ? attributes.addClass('input') : attributes }} />{{ children }}

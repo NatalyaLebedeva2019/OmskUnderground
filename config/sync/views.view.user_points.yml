@@ -134,7 +134,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Authored by'
+          label: Автор
           exclude: false
           alter:
             alter_text: false
@@ -579,7 +579,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Actions
+          label: Действия
           exclude: false
           alter:
             alter_text: false
@@ -663,7 +663,7 @@ display:
           exposed: true
           expose:
             operator_id: uid_op
-            label: 'Authored by'
+            label: Автор
             description: ''
             use_operator: false
             operator: uid_op

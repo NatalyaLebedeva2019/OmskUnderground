@@ -1,0 +1,12 @@
+uuid: a23c6f4f-afcd-4e9b-993b-5b8344fe515a
+langcode: en
+status: true
+dependencies: {  }
+id: products
+label: Products
+description: ''
+use_admin_theme: false
+path: /products
+access_logic: and
+access_conditions: {  }
+parameters: {  }

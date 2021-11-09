@@ -52,6 +52,16 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
+  my_orders:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  my_products:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   name:
     type: string
     weight: 1

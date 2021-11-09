@@ -1,0 +1,11 @@
+uuid: 99f1cf88-6100-4de2-bf1a-4a96129fc11e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: create_new_product
+title: 'Create new product'
+content:
+  value: "<p><a class=\"button is-link\" href=\"/select-product-category\">Create new product</a></p>\r\n"
+  format: full_html

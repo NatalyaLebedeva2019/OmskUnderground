@@ -18,7 +18,7 @@ settings:
       label: Valid
     -
       value: 0
-      label: Expired
+      label: Истекшие
   allowed_values_function: ''
 module: options
 locked: false
